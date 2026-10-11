@@ -1,15 +1,15 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Sacred Prayer of Saint Anthony</title>
-<meta name="description" content="The 8-minute morning prayer of Saint Anthony of Padua, with all your gifts: prayers, devotions and guides.">
+<title>La Prière Sacrée de Saint Antoine</title>
+<meta name="description" content="La prière du matin de 8 minutes de Saint Antoine de Padoue, avec tous vos cadeaux : prières, dévotions et guides.">
 <meta name="theme-color" content="#4a1823">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="St. Anthony">
+<meta name="apple-mobile-web-app-title" content="Saint Antoine">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
@@ -82,7 +82,7 @@ nav.tabs button[aria-current="page"] svg{stroke-width:2.1}
 .hero .eyebrow{color:#e8c77f}
 .hero h1,.hero h2{color:var(--on-hero)}
 .hero p{color:rgba(251,241,228,.86)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--line);background:var(--surface);border-radius:14px;padding:12px 18px;font-weight:600;font-size:.98rem;text-decoration:none;color:var(--ink);min-height:48px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--line);background:var(--surface);border-radius:14px;padding:12px 18px;font-weight:600;font-size:.98rem;text-decoration:none;color:var(--ink);min-height:48px;text-align:center}
 .btn.primary{background:var(--wine);border-color:var(--wine);color:#fff}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.primary{background:#e2be6e;border-color:#e2be6e;color:#2a0d15}}
 :root[data-theme="dark"] .btn.primary{background:#e2be6e;border-color:#e2be6e;color:#2a0d15}
@@ -94,7 +94,7 @@ nav.tabs button[aria-current="page"] svg{stroke-width:2.1}
 
 /* week dots */
 .week{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-top:14px}
-.week div{text-align:center;font-size:.7rem;color:rgba(251,241,228,.7)}
+.week div{text-align:center;font-size:.7rem;color:rgba(251,241,228,.7);text-transform:uppercase}
 .week span{display:grid;place-items:center;margin:4px auto 0;width:30px;height:30px;border-radius:50%;border:1.5px solid rgba(226,190,110,.5);font-size:.78rem;color:#fbf1e4}
 .week span.done{background:#e2be6e;border-color:#e2be6e;color:#2a0d15;font-weight:700}
 .week span.today{box-shadow:0 0 0 3px rgba(226,190,110,.35)}
@@ -153,16 +153,14 @@ ul.plain{padding-left:1.1em;margin:0 0 1em} ul.plain li{margin-bottom:.45em}
 textarea,input[type=text]{width:100%;font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;resize:vertical}
 textarea:focus,input:focus{outline:2px solid var(--gold);outline-offset:1px}
 .seg{display:grid;gap:6px;background:var(--surface2);border-radius:14px;padding:4px;margin-bottom:16px}
-.seg button{border:0;background:transparent;border-radius:10px;padding:9px 6px;font-weight:600;font-size:.88rem;color:var(--muted)}
+.seg button{border:0;background:transparent;border-radius:10px;padding:9px 6px;font-weight:600;font-size:.84rem;color:var(--muted)}
 .seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:var(--shadow)}
 .entry{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin-bottom:10px}
 .entry .meta{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:.78rem;color:var(--muted);margin-bottom:4px}
 .entry p{margin:0;white-space:pre-wrap}
 .entry.answered{border-color:var(--ok)}
-.entry .acts{display:flex;gap:8px;margin-top:8px}
+.entry .acts{display:flex;gap:12px;margin-top:8px}
 .link{border:0;background:none;padding:0;color:var(--wine);font-weight:600;text-decoration:underline;text-underline-offset:2px}
-.check{display:flex;gap:12px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:10px;cursor:pointer}
-.check input{width:22px;height:22px;accent-color:var(--wine);margin:2px 0 0;flex:none}
 .qa{display:grid;grid-template-columns:1fr auto auto;gap:8px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
 .qa .chip-btn[aria-pressed="true"]{background:var(--wine);border-color:var(--wine);color:#fff}
 
@@ -199,9 +197,9 @@ ol.steps li small{display:block;color:var(--muted);margin-top:4px}
 <header class="top">
   <div class="wrap">
     <img src="icons/icon-192.png" alt="">
-    <span class="title">Saint Anthony</span>
-    <button class="chip-btn gold" id="hdr-install" data-install hidden>Install</button>
-    <button class="icon-btn" id="theme-btn" aria-label="Switch light or dark mode"><svg viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    <span class="title">Saint Antoine</span>
+    <button class="chip-btn gold" id="hdr-install" data-install hidden>Installer</button>
+    <button class="icon-btn" id="theme-btn" aria-label="Passer en mode clair ou sombre"><svg viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
   </div>
 </header>
 
@@ -209,17 +207,17 @@ ol.steps li small{display:block;color:var(--muted);margin-top:4px}
 
 <nav class="tabs" aria-label="Sections">
   <div class="wrap">
-    <button data-tab="home"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg>Home</button>
-    <button data-tab="prayer"><svg viewBox="0 0 24 24"><path d="M12 3v18M6 9h12"/></svg>Prayer</button>
-    <button data-tab="gifts"><svg viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="M12 8v13M3 12h18M12 8c-2-4-6-4-6-1s6 1 6 1zM12 8c2-4 6-4 6-1s-6 1-6 1z"/></svg>Gifts</button>
+    <button data-tab="home"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg>Accueil</button>
+    <button data-tab="prayer"><svg viewBox="0 0 24 24"><path d="M12 3v18M6 9h12"/></svg>Prière</button>
+    <button data-tab="gifts"><svg viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="M12 8v13M3 12h18M12 8c-2-4-6-4-6-1s6 1 6 1zM12 8c2-4 6-4 6-1s-6 1-6 1z"/></svg>Cadeaux</button>
     <button data-tab="journal"><svg viewBox="0 0 24 24"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"/><path d="M5 17a3 3 0 0 1 3-3h11"/></svg>Journal</button>
-    <button data-tab="more"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14M12 17.5v.01"/></svg>Help</button>
+    <button data-tab="more"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14M12 17.5v.01"/></svg>Aide</button>
   </div>
 </nav>
 
 <div id="reader" hidden role="dialog" aria-modal="true" aria-labelledby="rtitle">
   <div class="rtop"><div class="wrap">
-    <button class="icon-btn" id="rclose" aria-label="Back"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <button class="icon-btn" id="rclose" aria-label="Retour"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
     <span class="rt" id="rtitle"></span>
   </div></div>
   <div class="wrap" id="rbody"></div>
@@ -240,307 +238,307 @@ const fmtTime = s => Math.floor(s/60) + ":" + String(s%60).padStart(2,"0");
 const CHEV = `<svg class="chev" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>`;
 const V = (text, ref) => `<div class="card"><p class="verse">${text}</p><span class="ref">${ref}</span></div>`;
 
-/* ---------- content: the Sacred 8-Minute Prayer ---------- */
+/* ---------- contenu : la Prière Sacrée de 8 minutes ---------- */
 const SACRED_STEPS = [
-  { t:"Arrive in stillness", secs:45,
-    instr:"Sit comfortably. Breathe slowly. Make the Sign of the Cross.",
-    text:`In the name of the Father,
-and of the Son,
-and of the Holy Spirit. Amen.
+  { t:"Entrer dans le silence", secs:45,
+    instr:"Asseyez-vous confortablement. Respirez lentement. Faites le signe de la croix.",
+    text:`Au nom du Père,
+et du Fils,
+et du Saint-Esprit. Amen.
 
-<em>Be still, and know that I am God.</em>
-(Psalm 46:10)` },
+<em>Arrêtez, et sachez que je suis Dieu.</em>
+(Psaume 46:11)` },
   { t:"Invocation", secs:45,
-    instr:"Call on Saint Anthony as a friend who prays with you.",
-    text:`Blessed be God in His Angels and in His Saints.
+    instr:"Appelez Saint Antoine comme un ami qui prie avec vous.",
+    text:`Béni soit Dieu dans ses Anges et dans ses Saints.
 
-Saint Anthony of Padua,
-friend of the poor and helper of all who seek,
-I begin this day beside you.
-Pray with me and for me. Amen.` },
-  { t:"Prayer to your Guardian Angel", secs:45,
-    instr:"God placed an angel beside you from your first breath.",
-    text:`Angel of God, my guardian dear,
-to whom God's love commits me here,
-ever this day be at my side,
-to light and guard, to rule and guide. Amen.
+Saint Antoine de Padoue,
+ami des pauvres et secours de tous ceux qui cherchent,
+je commence cette journée à vos côtés.
+Priez avec moi et pour moi. Amen.` },
+  { t:"Prière à votre Ange gardien", secs:45,
+    instr:"Dieu a placé un ange à vos côtés dès votre premier souffle.",
+    text:`Ange de Dieu, qui êtes mon gardien,
+et à qui j'ai été confié par la bonté divine,
+éclairez-moi, gardez-moi,
+dirigez-moi et gouvernez-moi. Amen.
 
-<em>For he shall give his angels charge over thee,
-to keep thee in all thy ways.</em> (Psalm 91:11)` },
-  { t:"Place your intention", secs:60, intention:true,
-    instr:"In silence, place before God the need you carry today.",
-    text:`Lord, You already know what is in my heart.
-I place it in Your hands now:` },
-  { t:"The Sacred Prayer of Saint Anthony", secs:120,
-    instr:"Pray slowly, word by word. You can read it aloud or in silence.",
-    text:`O glorious Saint Anthony, servant of God and friend of the poor,
-at the beginning of this day I come to you with an open heart.
+<em>Car il ordonnera à ses anges
+de te garder dans toutes tes voies.</em> (Psaume 91:11)` },
+  { t:"Confier votre intention", secs:60, intention:true,
+    instr:"En silence, présentez à Dieu le besoin que vous portez aujourd'hui.",
+    text:`Seigneur, vous connaissez déjà ce qui est dans mon cœur.
+Je le remets maintenant entre vos mains :` },
+  { t:"La Prière Sacrée de Saint Antoine", secs:120,
+    instr:"Priez lentement, mot à mot. À voix haute ou en silence.",
+    text:`Ô glorieux Saint Antoine, serviteur de Dieu et ami des pauvres,
+au début de cette journée je viens à vous le cœur ouvert.
 
-You who walked the roads of Padua with the Gospel in your hands,
-and never turned away anyone in need,
-take my hand this morning and lead me closer to Jesus.
+Vous qui avez parcouru les routes de Padoue l'Évangile à la main,
+et qui n'avez jamais repoussé personne dans le besoin,
+prenez ma main ce matin et conduisez-moi plus près de Jésus.
 
-I place before you everything I carry:
-my family, my home, my work, my health and my daily bread.
+Je dépose devant vous tout ce que je porte :
+ma famille, ma maison, mon travail, ma santé et mon pain quotidien.
 
-Where there is worry, ask the Lord to send His peace.
-Where a door is closed, ask Him for patience and the right path.
-Where something has been lost, an object, a friendship or my hope,
-help me find it again, if it is the will of God.
+Là où il y a de l'inquiétude, demandez au Seigneur d'envoyer sa paix.
+Là où une porte est fermée, demandez-lui la patience et le bon chemin.
+Là où quelque chose a été perdu, un objet, une amitié ou mon espérance,
+aidez-moi à le retrouver, si telle est la volonté de Dieu.
 
-Holy Guardian Angel, whom God placed beside me,
-guard my steps today, keep my thoughts clear and my heart gentle.
+Saint Ange gardien, que Dieu a placé à mes côtés,
+gardez mes pas aujourd'hui, mes pensées claires et mon cœur doux.
 
-Lord Jesus, I trust in Your providence.
-Give us this day our daily bread,
-and make me generous with all I receive.
+Seigneur Jésus, je me confie à votre providence.
+Donnez-nous aujourd'hui notre pain de ce jour,
+et rendez-moi généreux de tout ce que je reçois.
 
-Saint Anthony, pray for me, pray for my family,
-and present my request to the Child Jesus
-whom you held in your arms. Amen.` },
-  { t:"The Unfailing Prayer", secs:75,
-    instr:"A traditional prayer to Saint Anthony, prayed by the faithful for generations.",
-    text:`O Holy Saint Anthony, gentlest of Saints,
-your love for God and charity for His creatures
-made you worthy, when on earth, to possess miraculous powers.
+Saint Antoine, priez pour moi, priez pour ma famille,
+et présentez ma demande à l'Enfant Jésus
+que vous avez tenu dans vos bras. Amen.` },
+  { t:"La Prière qui ne déçoit pas", secs:75,
+    instr:"Une prière traditionnelle à Saint Antoine, priée par les fidèles depuis des générations.",
+    text:`Ô Saint Antoine, le plus doux des saints,
+votre amour pour Dieu et votre charité pour ses créatures
+vous ont rendu digne, sur la terre, de posséder des pouvoirs miraculeux.
 
-Encouraged by this thought, I implore you
-to obtain for me the grace I ask today.
+Encouragé par cette pensée, je vous supplie
+de m'obtenir la grâce que je demande aujourd'hui.
 
-O gentle and loving Saint Anthony,
-whose heart was ever full of human sympathy,
-whisper my petition into the ears of the sweet Infant Jesus,
-who loved to be folded in your arms;
-and the gratitude of my heart will ever be yours. Amen.` },
+Ô doux et bon Saint Antoine,
+dont le cœur était toujours plein de compassion,
+murmurez ma demande à l'oreille du doux Enfant Jésus,
+qui aimait se blottir dans vos bras ;
+et la gratitude de mon cœur vous sera acquise pour toujours. Amen.` },
   { t:"Gratitude", secs:45,
-    instr:"Name in your heart three things you are thankful for today.",
-    text:`Thank You, Lord, for this new morning.
-Thank You for the people You placed in my life.
-Thank You for what I have, and for what is still on its way.
+    instr:"Nommez dans votre cœur trois choses pour lesquelles vous êtes reconnaissant aujourd'hui.",
+    text:`Merci, Seigneur, pour ce nouveau matin.
+Merci pour les personnes que vous avez placées dans ma vie.
+Merci pour ce que j'ai, et pour ce qui est encore en chemin.
 
-<em>This is the day which the LORD hath made;
-we will rejoice and be glad in it.</em> (Psalm 118:24)` },
-  { t:"Blessing for the day", secs:45,
-    instr:"Receive the blessing and go in peace. Make the Sign of the Cross.",
-    text:`<em>The LORD bless thee, and keep thee:
-the LORD make his face shine upon thee, and be gracious unto thee:
-the LORD lift up his countenance upon thee, and give thee peace.</em>
-(Numbers 6:24-26)
+<em>C'est ici la journée que l'Éternel a faite :
+qu'elle soit pour nous un sujet d'allégresse et de joie !</em> (Psaume 118:24)` },
+  { t:"Bénédiction pour la journée", secs:45,
+    instr:"Recevez la bénédiction et allez en paix. Faites le signe de la croix.",
+    text:`<em>Que l'Éternel te bénisse, et qu'il te garde !
+Que l'Éternel fasse luire sa face sur toi, et qu'il t'accorde sa grâce !
+Que l'Éternel tourne sa face vers toi, et qu'il te donne la paix !</em>
+(Nombres 6:24-26)
 
-Saint Anthony, pray for us.
-In the name of the Father, and of the Son, and of the Holy Spirit. Amen.` }
+Saint Antoine, priez pour nous.
+Au nom du Père, et du Fils, et du Saint-Esprit. Amen.` }
 ];
 
-/* ---------- content: teachings for the main prayer ---------- */
+/* ---------- contenu : enseignements ---------- */
 const TEACH = {
-  how: { title:"How to pray it", html:`
-    <span class="eyebrow">Before you begin</span><h1>How to pray the 8-minute prayer</h1>
-    <p>The Sacred Prayer of Saint Anthony is a short morning practice in eight moments. The app guides you step by step, with a gentle bell between each part.</p>
+  how: { title:"Comment la prier", html:`
+    <span class="eyebrow">Avant de commencer</span><h1>Comment prier la prière de 8 minutes</h1>
+    <p>La Prière Sacrée de Saint Antoine est une courte pratique du matin en huit moments. L'application vous guide pas à pas, avec une douce cloche entre chaque partie.</p>
     <ol class="plain">
-      <li><b>Pray in the morning,</b> before the noise of the day begins. If mornings are hard, choose any quiet moment.</li>
-      <li><b>Find a quiet place.</b> Silence your phone notifications, sit comfortably and breathe slowly.</li>
-      <li><b>Write your intention</b> in the Journal. It will appear during the prayer so you can present it to God.</li>
-      <li><b>Pray slowly.</b> It is better to say a few words with the heart than many words in a hurry.</li>
-      <li><b>Pray every day for seven days.</b> Faithfulness matters more than perfection. If you miss a day, simply start again.</li>
-      <li><b>Write down what you notice</b> in the Journal: peace, an answer, a sign, a word that touched you.</li>
+      <li><b>Priez le matin,</b> avant que le bruit de la journée ne commence. Si le matin est difficile, choisissez n'importe quel moment de calme.</li>
+      <li><b>Trouvez un endroit tranquille.</b> Coupez les notifications de votre téléphone, asseyez-vous confortablement et respirez lentement.</li>
+      <li><b>Écrivez votre intention</b> dans le Journal. Elle apparaîtra pendant la prière pour que vous puissiez la présenter à Dieu.</li>
+      <li><b>Priez lentement.</b> Mieux vaut dire peu de mots avec le cœur que beaucoup de mots à la hâte.</li>
+      <li><b>Priez chaque jour pendant sept jours.</b> La fidélité compte plus que la perfection. Si vous oubliez un jour, recommencez simplement.</li>
+      <li><b>Notez ce que vous remarquez</b> dans le Journal : une paix, une réponse, un signe, une parole qui vous a touché.</li>
     </ol>
-    ${V("My voice shalt thou hear in the morning, O LORD; in the morning will I direct my prayer unto thee, and will look up.","Psalm 5:3")}` },
-  angel: { title:"Your Guardian Angel", html:`
-    <span class="eyebrow">Teaching</span><h1>Your Guardian Angel</h1>
-    <p>Scripture and Christian tradition teach that God gives each person an angel to accompany them through life. The Lord says in the book of Exodus:</p>
-    ${V("Behold, I send an Angel before thee, to keep thee in the way, and to bring thee into the place which I have prepared.","Exodus 23:20")}
-    <p>Jesus Himself spoke of the angels of the little ones, who "always behold the face of my Father which is in heaven" (Matthew 18:10).</p>
-    <p>Saint Anthony lived in deep friendship with God, and his prayer was always humble, simple and full of trust. That is the spirit of this prayer: not a magic formula, but a heart that opens itself to God, with the help of the angels and the saints.</p>
-    <h3>How to grow this friendship</h3>
+    ${V("Éternel ! le matin tu entends ma voix ; le matin je me tourne vers toi, et je regarde.","Psaume 5:4")}` },
+  angel: { title:"Votre Ange gardien", html:`
+    <span class="eyebrow">Enseignement</span><h1>Votre Ange gardien</h1>
+    <p>L'Écriture et la tradition chrétienne enseignent que Dieu donne à chaque personne un ange pour l'accompagner tout au long de sa vie. Le Seigneur dit dans le livre de l'Exode :</p>
+    ${V("Voici, j'envoie un ange devant toi, pour te protéger en chemin, et pour te faire arriver au lieu que j'ai préparé.","Exode 23:20")}
+    <p>Jésus lui-même a parlé des anges des petits, qui « voient continuellement la face de mon Père qui est dans les cieux » (Matthieu 18:10).</p>
+    <p>Saint Antoine vivait dans une profonde amitié avec Dieu, et sa prière était toujours humble, simple et pleine de confiance. C'est l'esprit de cette prière : non pas une formule magique, mais un cœur qui s'ouvre à Dieu, avec l'aide des anges et des saints.</p>
+    <h3>Comment faire grandir cette amitié</h3>
     <ul class="plain">
-      <li>Greet your Guardian Angel every morning with the short prayer "Angel of God".</li>
-      <li>Before a difficult conversation or decision, ask for light and calm.</li>
-      <li>At night, thank God for the protection you received during the day.</li>
+      <li>Saluez votre Ange gardien chaque matin avec la courte prière « Ange de Dieu ».</li>
+      <li>Avant une conversation ou une décision difficile, demandez la lumière et le calme.</li>
+      <li>Le soir, remerciez Dieu pour la protection reçue pendant la journée.</li>
     </ul>
-    ${V("The angel of the LORD encampeth round about them that fear him, and delivereth them.","Psalm 34:7")}` },
-  mistake: { title:"The most common mistake in prayer", html:`
-    <span class="eyebrow">Teaching</span><h1>The most common mistake in prayer</h1>
-    <p>Many people say: "I pray, but nothing happens." Spiritual guides who spent their whole lives in prayer often point to the same mistake: <b>we speak to God, but we do not stay to listen, and we give up too soon.</b></p>
-    <h3>1. Speaking without listening</h3>
-    <p>Prayer is a conversation. After presenting your request, stay in silence for a moment. God often answers as a "still small voice" (1 Kings 19:12): a peace, a thought, an idea, a word of Scripture.</p>
-    <h3>2. Giving up too soon</h3>
-    <p>Jesus told a parable "to this end, that men ought always to pray, and not to faint" (Luke 18:1). Answers come in God's time, not ours. Perseverance is part of the prayer.</p>
-    <h3>3. Praying only to ask</h3>
-    <p>When we also thank, praise and forgive, the heart becomes ready to recognise the answers. That is why the 8-minute prayer has a moment of gratitude.</p>
-    <h3>4. Expecting only one kind of answer</h3>
-    <p>God may answer "yes", "not yet" or "I have something better". Sometimes the answer is the strength to go through a situation, not the end of it.</p>
-    ${V("Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God. And the peace of God, which passeth all understanding, shall keep your hearts and minds through Christ Jesus.","Philippians 4:6-7")}` }
+    ${V("L'ange de l'Éternel campe autour de ceux qui le craignent, et il les arrache au danger.","Psaume 34:8")}` },
+  mistake: { title:"L'erreur la plus fréquente dans la prière", html:`
+    <span class="eyebrow">Enseignement</span><h1>L'erreur la plus fréquente dans la prière</h1>
+    <p>Beaucoup disent : « Je prie, mais rien ne se passe. » Les guides spirituels qui ont passé toute leur vie dans la prière pointent souvent la même erreur : <b>nous parlons à Dieu, mais nous ne restons pas pour écouter, et nous abandonnons trop tôt.</b></p>
+    <h3>1. Parler sans écouter</h3>
+    <p>La prière est une conversation. Après avoir présenté votre demande, restez un moment en silence. Dieu répond souvent par « un murmure doux et léger » (1 Rois 19:12) : une paix, une pensée, une idée, une parole de l'Écriture.</p>
+    <h3>2. Abandonner trop tôt</h3>
+    <p>Jésus a dit une parabole « pour montrer qu'il faut toujours prier, et ne point se relâcher » (Luc 18:1). Les réponses viennent au temps de Dieu, pas au nôtre. La persévérance fait partie de la prière.</p>
+    <h3>3. Prier seulement pour demander</h3>
+    <p>Quand nous remercions, louons et pardonnons aussi, le cœur devient prêt à reconnaître les réponses. C'est pourquoi la prière de 8 minutes comporte un moment de gratitude.</p>
+    <h3>4. N'attendre qu'un seul type de réponse</h3>
+    <p>Dieu peut répondre « oui », « pas encore » ou « j'ai quelque chose de meilleur ». Parfois, la réponse est la force de traverser une situation, et non sa fin.</p>
+    ${V("Ne vous inquiétez de rien ; mais en toute chose faites connaître vos besoins à Dieu par des prières et des supplications, avec des actions de grâces. Et la paix de Dieu, qui surpasse toute intelligence, gardera vos cœurs et vos pensées en Jésus-Christ.","Philippiens 4:6-7")}` }
 };
 
 const QUESTIONS = [
-  "In recent months, have you felt close to God or to your Guardian Angel?",
-  "In this same period, have you felt that your prayers were heard?",
-  "Have you noticed unexpected blessings or small graces in your life?"
+  "Ces derniers mois, vous êtes-vous senti proche de Dieu ou de votre Ange gardien ?",
+  "Pendant cette même période, avez-vous senti que vos prières étaient entendues ?",
+  "Avez-vous remarqué des bénédictions inattendues ou de petites grâces dans votre vie ?"
 ];
 
-/* ---------- content: gifts ---------- */
+/* ---------- contenu : cadeaux ---------- */
 const MANUSCRIPT = [
-  { id:"life", t:"Who was Saint Anthony?", sub:"His life in 3 minutes", html:`
-    <span class="eyebrow">The Manuscript</span><h1>Who was Saint Anthony?</h1>
-    <p>Saint Anthony was born <b>Fernando Martins de Bulhões</b>, in Lisbon, Portugal, around the year 1195, in a noble family. As a young man he became an Augustinian canon and studied Scripture deeply.</p>
-    <p>Moved by the witness of the first Franciscan martyrs, he joined the Order of Saint Francis and took the name <b>Anthony</b>. He wanted to be a missionary in Africa, but illness and a storm brought him to Italy, where Saint Francis himself entrusted him with teaching theology to the friars.</p>
-    <p>He became one of the greatest preachers of his time, in Italy and in France. Crowds gathered to hear him, and he defended the poor against usury and injustice.</p>
-    <p>He died on <b>13 June 1231</b>, near Padua, at about 36 years of age. He was declared a saint less than a year later, one of the fastest canonisations in history. In 1946 he was named a <b>Doctor of the Church</b>, the "Evangelical Doctor".</p>
-    <p>Today his Basilica in Padua welcomes pilgrims from all over the world. He is loved as the patron of the poor, of those who search for something lost, and of all who need help.</p>
-    ${V("Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you.","Matthew 7:7")}` },
-  { id:"unfailing", t:"The Unfailing Prayer", sub:"Traditional prayer for a special grace", html:`
-    <span class="eyebrow">The Manuscript</span><h1>The Unfailing Prayer to Saint Anthony</h1>
-    <p class="muted">Traditionally prayed for a special intention, often on 13 consecutive days.</p>
-    <div class="prayer">Blessed be God in His Angels and in His Saints.
+  { id:"life", t:"Qui était Saint Antoine ?", sub:"Sa vie en 3 minutes", html:`
+    <span class="eyebrow">Le Manuscrit</span><h1>Qui était Saint Antoine ?</h1>
+    <p>Saint Antoine est né <b>Fernando Martins de Bulhões</b>, à Lisbonne, au Portugal, vers l'an 1195, dans une famille noble. Jeune homme, il devint chanoine augustin et étudia profondément l'Écriture.</p>
+    <p>Touché par le témoignage des premiers martyrs franciscains, il entra dans l'Ordre de Saint François et prit le nom d'<b>Antoine</b>. Il voulait être missionnaire en Afrique, mais la maladie et une tempête le conduisirent en Italie, où Saint François lui-même lui confia l'enseignement de la théologie aux frères.</p>
+    <p>Il devint l'un des plus grands prédicateurs de son temps, en Italie et en France. Les foules se rassemblaient pour l'écouter, et il défendait les pauvres contre l'usure et l'injustice.</p>
+    <p>Il mourut le <b>13 juin 1231</b>, près de Padoue, à environ 36 ans. Il fut déclaré saint moins d'un an plus tard, l'une des canonisations les plus rapides de l'histoire. En 1946, il fut proclamé <b>Docteur de l'Église</b>, le « Docteur évangélique ».</p>
+    <p>Aujourd'hui, sa Basilique de Padoue accueille des pèlerins du monde entier. Il est aimé comme le patron des pauvres, de ceux qui cherchent un objet perdu, et de tous ceux qui ont besoin d'aide.</p>
+    ${V("Demandez, et l'on vous donnera ; cherchez, et vous trouverez ; frappez, et l'on vous ouvrira.","Matthieu 7:7")}` },
+  { id:"unfailing", t:"La Prière qui ne déçoit pas", sub:"Prière traditionnelle pour une grâce particulière", html:`
+    <span class="eyebrow">Le Manuscrit</span><h1>La Prière qui ne déçoit pas</h1>
+    <p class="muted">Traditionnellement priée pour une intention particulière, souvent pendant 13 jours de suite.</p>
+    <div class="prayer">Béni soit Dieu dans ses Anges et dans ses Saints.
 
-O Holy Saint Anthony, gentlest of Saints, your love for God and charity for His creatures made you worthy, when on earth, to possess miraculous powers. Miracles waited on your word, which you were ever ready to speak for those in trouble or anxiety.
+Ô Saint Antoine, le plus doux des saints, votre amour pour Dieu et votre charité pour ses créatures vous ont rendu digne, sur la terre, de posséder des pouvoirs miraculeux. Les miracles attendaient votre parole, que vous étiez toujours prêt à dire pour ceux qui étaient dans la peine ou l'angoisse.
 
-Encouraged by this thought, I implore you to obtain for me <em>(mention your request)</em>. The answer to my prayer may require a miracle; even so, you are the Saint of Miracles.
+Encouragé par cette pensée, je vous supplie de m'obtenir <em>(dites votre demande)</em>. La réponse à ma prière demandera peut-être un miracle ; même ainsi, vous êtes le Saint des miracles.
 
-O gentle and loving Saint Anthony, whose heart was ever full of human sympathy, whisper my petition into the ears of the sweet Infant Jesus, who loved to be folded in your arms; and the gratitude of my heart will ever be yours. Amen.</div>` },
-  { id:"lost", t:"Prayer for what was lost", sub:"Objects, peace, hope", html:`
-    <span class="eyebrow">The Manuscript</span><h1>Prayer for what was lost</h1>
-    <p class="muted">Saint Anthony is known all over the world as the helper of those who search for something lost.</p>
-    <div class="prayer">Saint Anthony, perfect imitator of Jesus,
-who received from God the special power of restoring lost things,
-grant that I may find <em>(name what was lost)</em>.
+Ô doux et bon Saint Antoine, dont le cœur était toujours plein de compassion, murmurez ma demande à l'oreille du doux Enfant Jésus, qui aimait se blottir dans vos bras ; et la gratitude de mon cœur vous sera acquise pour toujours. Amen.</div>` },
+  { id:"lost", t:"Prière pour ce qui est perdu", sub:"Objets, paix, espérance", html:`
+    <span class="eyebrow">Le Manuscrit</span><h1>Prière pour ce qui est perdu</h1>
+    <p class="muted">Saint Antoine est connu dans le monde entier comme celui qui aide à retrouver ce qui est perdu.</p>
+    <div class="prayer">Saint Antoine, parfait imitateur de Jésus,
+qui avez reçu de Dieu le don particulier de faire retrouver les choses perdues,
+obtenez-moi de retrouver <em>(nommez ce qui est perdu)</em>.
 
-At least restore to me peace and tranquillity of mind,
-the loss of which has afflicted me even more than my material loss.
+Rendez-moi au moins la paix et la tranquillité de l'esprit,
+dont la perte m'afflige plus encore que la perte matérielle.
 
-And to this favour I ask another:
-that I may always remain in possession of the true good, that is God.
-Let me rather lose all things than lose God, my supreme good. Amen.</div>
-    <div class="note">The short popular version: <i>"Saint Anthony, Saint Anthony, please come around. Something is lost and cannot be found."</i></div>` },
-  { id:"brief", t:"Saint Anthony's Brief", sub:"A short prayer of protection", html:`
-    <span class="eyebrow">The Manuscript</span><h1>Saint Anthony's Brief</h1>
-    <p class="muted">An ancient prayer of protection associated with Saint Anthony. It is engraved on the base of the obelisk in Saint Peter's Square, in Rome.</p>
-    <div class="latin">Ecce Crucem Domini!
-Fugite partes adversae!
+Et à cette faveur, j'en ajoute une autre :
+que je garde toujours le vrai bien, qui est Dieu.
+Que je perde plutôt toutes choses que de perdre Dieu, mon bien suprême. Amen.</div>
+    <div class="note">La version populaire courte : <i>« Saint Antoine de Padoue, vous qui retrouvez tout, aidez-moi à retrouver ce que j'ai perdu. »</i></div>` },
+  { id:"brief", t:"Le Bref de Saint Antoine", sub:"Une courte prière de protection", html:`
+    <span class="eyebrow">Le Manuscrit</span><h1>Le Bref de Saint Antoine</h1>
+    <p class="muted">Une prière de protection très ancienne associée à Saint Antoine. Elle est gravée sur le socle de l'obélisque de la place Saint-Pierre, à Rome.</p>
+    <div class="latin">Ecce Crucem Domini !
+Fugite partes adversae !
 Vicit Leo de tribu Juda,
-Radix David! Alleluia!</div>
+Radix David ! Alleluia !</div>
     <div class="divider"></div>
-    <div class="prayer">Behold the Cross of the Lord!
-Flee, all enemy powers!
-The Lion of the tribe of Judah,
-the root of David, has conquered! Alleluia!</div>
-    <div class="note">Many people write it on a small card and keep it in their wallet or by the door of their home, as a sign of faith in Christ's victory.</div>` },
-  { id:"home", t:"Prayer for the home and family", sub:"Peace and unity at home", html:`
-    <span class="eyebrow">The Manuscript</span><h1>Prayer for the home and family</h1>
-    <div class="prayer">Saint Anthony, you who loved families and brought peace wherever you went,
-look upon my home and the people I love.
+    <div class="prayer">Voici la Croix du Seigneur !
+Fuyez, puissances ennemies !
+Il a vaincu, le Lion de la tribu de Juda,
+le rejeton de David ! Alléluia !</div>
+    <div class="note">Beaucoup l'écrivent sur une petite carte qu'ils gardent dans leur portefeuille ou près de la porte de leur maison, comme signe de foi en la victoire du Christ.</div>` },
+  { id:"home", t:"Prière pour la maison et la famille", sub:"Paix et unité au foyer", html:`
+    <span class="eyebrow">Le Manuscrit</span><h1>Prière pour la maison et la famille</h1>
+    <div class="prayer">Saint Antoine, vous qui aimiez les familles et apportiez la paix partout où vous alliez,
+regardez ma maison et ceux que j'aime.
 
-Where there is tension, bring patience.
-Where there is distance, bring reconciliation.
-Where there is sadness, bring the joy of the Gospel.
+Là où il y a des tensions, apportez la patience.
+Là où il y a de la distance, apportez la réconciliation.
+Là où il y a de la tristesse, apportez la joie de l'Évangile.
 
-Bless our table, our rest and our work.
-Protect our children, our elders and those who are far away.
-May our home be a place where God is welcome. Amen.</div>
-    ${V("Except the LORD build the house, they labour in vain that build it.","Psalm 127:1")}` },
-  { id:"work", t:"Prayer for work and daily bread", sub:"Provision, a job, the right door", html:`
-    <span class="eyebrow">The Manuscript</span><h1>Prayer for work and daily bread</h1>
-    <div class="prayer">Saint Anthony, friend of the poor and protector of workers,
-I present to you my work and my daily bread.
+Bénissez notre table, notre repos et notre travail.
+Protégez nos enfants, nos aînés et ceux qui sont loin.
+Que notre maison soit un lieu où Dieu est le bienvenu. Amen.</div>
+    ${V("Si l'Éternel ne bâtit la maison, ceux qui la bâtissent travaillent en vain.","Psaume 127:1")}` },
+  { id:"work", t:"Prière pour le travail et le pain quotidien", sub:"Subsistance, emploi, la bonne porte", html:`
+    <span class="eyebrow">Le Manuscrit</span><h1>Prière pour le travail et le pain quotidien</h1>
+    <div class="prayer">Saint Antoine, ami des pauvres et protecteur des travailleurs,
+je vous présente mon travail et mon pain quotidien.
 
-If I am looking for work, guide my steps to the right door.
-If I am tired in my work, renew my strength and my joy.
-If I am worried about bills and debts, give me wisdom, order and courage
-to take one good step at a time.
+Si je cherche un emploi, guidez mes pas vers la bonne porte.
+Si je suis fatigué dans mon travail, renouvelez ma force et ma joie.
+Si je suis inquiet pour mes factures et mes dettes, donnez-moi sagesse, ordre et courage
+pour faire un bon pas à la fois.
 
-Lord, establish the work of my hands,
-and make me honest, diligent and generous. Amen.</div>
-    ${V("And let the beauty of the LORD our God be upon us: and establish thou the work of our hands upon us.","Psalm 90:17")}` },
-  { id:"love", t:"Prayer for marriage and love", sub:"For couples and for those who wait", html:`
-    <span class="eyebrow">The Manuscript</span><h1>Prayer for marriage and love</h1>
-    <p class="muted">In many countries Saint Anthony is lovingly called the "matchmaker saint", and couples entrust their love to him.</p>
-    <div class="prayer">Saint Anthony, friend of families,
-I entrust to you the love in my life.
+Seigneur, affermis l'ouvrage de mes mains,
+et rends-moi honnête, diligent et généreux. Amen.</div>
+    ${V("Que la grâce de l'Éternel, notre Dieu, soit sur nous ! Affermis l'ouvrage de nos mains.","Psaume 90:17")}` },
+  { id:"love", t:"Prière pour le couple et l'amour", sub:"Pour les couples et pour ceux qui attendent", html:`
+    <span class="eyebrow">Le Manuscrit</span><h1>Prière pour le couple et l'amour</h1>
+    <p class="muted">Dans de nombreux pays, on confie affectueusement à Saint Antoine les rencontres et les mariages.</p>
+    <div class="prayer">Saint Antoine, ami des familles,
+je vous confie l'amour dans ma vie.
 
-If I am married, renew in us tenderness, patience and respect.
-Heal what words have hurt, and teach us to forgive.
-If I am waiting for someone, give me a peaceful heart,
-and guide me to a person who loves God and will love me sincerely.
+Si je suis marié, renouvelez en nous la tendresse, la patience et le respect.
+Guérissez ce que les paroles ont blessé, et apprenez-nous à pardonner.
+Si j'attends quelqu'un, donnez-moi un cœur paisible,
+et guidez-moi vers une personne qui aime Dieu et qui m'aimera sincèrement.
 
-May love in my life be a reflection of God's love. Amen.</div>
-    ${V("Charity suffereth long, and is kind… beareth all things, believeth all things, hopeth all things, endureth all things.","1 Corinthians 13:4,7")}` },
-  { id:"illness", t:"Prayer in times of illness", sub:"Strength, comfort and courage", html:`
-    <span class="eyebrow">The Manuscript</span><h1>Prayer in times of illness</h1>
-    <div class="prayer">Lord Jesus, You walked among the sick with compassion.
-Through the intercession of Saint Anthony,
-I present to You <em>(name)</em>, who is going through a time of illness.
+Que l'amour dans ma vie soit le reflet de l'amour de Dieu. Amen.</div>
+    ${V("La charité est patiente, elle est pleine de bonté… elle excuse tout, elle croit tout, elle espère tout, elle supporte tout.","1 Corinthiens 13:4,7")}` },
+  { id:"illness", t:"Prière dans la maladie", sub:"Force, réconfort et courage", html:`
+    <span class="eyebrow">Le Manuscrit</span><h1>Prière dans la maladie</h1>
+    <div class="prayer">Seigneur Jésus, vous avez marché parmi les malades avec compassion.
+Par l'intercession de Saint Antoine,
+je vous présente <em>(prénom)</em>, qui traverse un temps de maladie.
 
-Give strength in the body and peace in the soul.
-Bless the doctors, nurses and caregivers,
-give them wisdom and gentle hands.
-Comfort the family and keep our hope alive.
+Donnez la force au corps et la paix à l'âme.
+Bénissez les médecins, les infirmiers et les soignants,
+donnez-leur la sagesse et des mains douces.
+Réconfortez la famille et gardez vivante notre espérance.
 
-Your will be done, and may Your grace be enough for us. Amen.</div>
-    <div class="note">Prayer accompanies and strengthens, and it walks together with medical care. Always follow the guidance of your doctor and health professionals.</div>` },
-  { id:"bread", t:"Saint Anthony's Bread", sub:"The tradition of giving to the poor", html:`
-    <span class="eyebrow">The Manuscript</span><h1>Saint Anthony's Bread</h1>
-    <p>"Saint Anthony's Bread" is a centuries-old tradition: when someone receives a grace through the saint's intercession, they thank God by helping the poor with bread, food or a donation.</p>
-    <p>It comes from a beautiful story: a mother promised to give the weight of her child in bread to the poor if her child was helped. Since then, many churches keep a box for "Saint Anthony's Bread".</p>
-    <h3>How to live it today</h3>
+Que votre volonté soit faite, et que votre grâce nous suffise. Amen.</div>
+    <div class="note">La prière accompagne et fortifie, et elle marche avec les soins médicaux. Suivez toujours les conseils de votre médecin et des professionnels de santé.</div>` },
+  { id:"bread", t:"Le Pain de Saint Antoine", sub:"La tradition du don aux pauvres", html:`
+    <span class="eyebrow">Le Manuscrit</span><h1>Le Pain de Saint Antoine</h1>
+    <p>Le « Pain de Saint Antoine » est une tradition séculaire : lorsqu'une personne reçoit une grâce par l'intercession du saint, elle remercie Dieu en aidant les pauvres avec du pain, de la nourriture ou un don.</p>
+    <p>Elle vient d'une belle histoire : une mère promit de donner aux pauvres le poids de son enfant en pain si son enfant était secouru. Depuis, de nombreuses églises gardent un tronc pour le « Pain de Saint Antoine ».</p>
+    <h3>Comment le vivre aujourd'hui</h3>
     <ul class="plain">
-      <li>Buy a meal for someone in need.</li>
-      <li>Donate food to your parish or a local charity.</li>
-      <li>Help a neighbour, an elderly person or a family going through difficulties.</li>
+      <li>Offrez un repas à une personne dans le besoin.</li>
+      <li>Donnez de la nourriture à votre paroisse ou à une association locale.</li>
+      <li>Aidez un voisin, une personne âgée ou une famille en difficulté.</li>
     </ul>
-    <div class="prayer">Saint Anthony, teach me to share.
-May every grace I receive become bread for someone else. Amen.</div>
-    ${V("The liberal soul shall be made fat: and he that watereth shall be watered also himself.","Proverbs 11:25")}` },
-  { id:"tuesdays", t:"The Thirteen Tuesdays", sub:"A traditional devotion", html:`
-    <span class="eyebrow">The Manuscript</span><h1>The Thirteen Tuesdays</h1>
-    <p>Saint Anthony was buried on a Tuesday, and many graces were remembered on that day. That is why the faithful dedicate <b>13 consecutive Tuesdays</b> to him, especially before his feast on 13 June.</p>
-    <h3>How to do it</h3>
+    <div class="prayer">Saint Antoine, apprenez-moi à partager.
+Que chaque grâce que je reçois devienne du pain pour quelqu'un d'autre. Amen.</div>
+    ${V("L'âme bienfaisante sera rassasiée, et celui qui arrose sera lui-même arrosé.","Proverbes 11:25")}` },
+  { id:"tuesdays", t:"Les Treize Mardis", sub:"Une dévotion traditionnelle", html:`
+    <span class="eyebrow">Le Manuscrit</span><h1>Les Treize Mardis de Saint Antoine</h1>
+    <p>Saint Antoine fut enseveli un mardi, et de nombreuses grâces furent rappelées ce jour-là. C'est pourquoi les fidèles lui consacrent <b>13 mardis consécutifs</b>, surtout avant sa fête du 13 juin.</p>
+    <h3>Comment faire</h3>
     <ol class="plain">
-      <li>Choose one intention for the 13 weeks and write it in your Journal.</li>
-      <li>Every Tuesday, pray the 8-minute prayer and the Unfailing Prayer.</li>
-      <li>If possible, attend Mass or visit a church.</li>
-      <li>Do one small act of charity (see "Saint Anthony's Bread").</li>
+      <li>Choisissez une intention pour les 13 semaines et écrivez-la dans votre Journal.</li>
+      <li>Chaque mardi, priez la prière de 8 minutes et la Prière qui ne déçoit pas.</li>
+      <li>Si possible, allez à la messe ou visitez une église.</li>
+      <li>Faites un petit geste de charité (voir « Le Pain de Saint Antoine »).</li>
     </ol>
-    <div class="note">Tip: open the Journal each Tuesday and write one line about how your heart is changing.</div>` },
-  { id:"water", t:"The Blessed Water Ritual", sub:"Holy water at home", html:`
-    <span class="eyebrow">The Manuscript</span><h1>The Blessed Water Ritual</h1>
-    <p>Holy water is one of the oldest signs of the Church. It reminds us of our Baptism and of God's protection over our life and our home.</p>
-    <h3>How to obtain blessed water</h3>
+    <div class="note">Conseil : ouvrez le Journal chaque mardi et écrivez une ligne sur la façon dont votre cœur change.</div>` },
+  { id:"water", t:"Le Rituel de l'eau bénite", sub:"L'eau bénite à la maison", html:`
+    <span class="eyebrow">Le Manuscrit</span><h1>Le Rituel de l'eau bénite</h1>
+    <p>L'eau bénite est l'un des signes les plus anciens de l'Église. Elle nous rappelle notre baptême et la protection de Dieu sur notre vie et notre maison.</p>
+    <h3>Comment obtenir de l'eau bénite</h3>
     <ol class="plain">
-      <li>Fill a clean bottle with water. Traditionally, a little salt is also brought.</li>
-      <li>Take it to your parish and ask a priest to bless it. Many churches also have holy water available at the entrance.</li>
-      <li>Keep it in a clean place at home, such as a small font by the door or a bottle near your crucifix.</li>
+      <li>Remplissez une bouteille propre avec de l'eau. Traditionnellement, on apporte aussi un peu de sel.</li>
+      <li>Apportez-la à votre paroisse et demandez à un prêtre de la bénir. Beaucoup d'églises ont aussi de l'eau bénite disponible à l'entrée.</li>
+      <li>Gardez-la dans un endroit propre à la maison, par exemple un petit bénitier près de la porte ou une bouteille près de votre crucifix.</li>
     </ol>
-    <h3>Morning blessing</h3>
-    <p>Touch the water with your fingertips and make the Sign of the Cross, praying:</p>
-    <div class="prayer">By this holy water,
-and by Your Precious Blood,
-wash away all my sins, O Lord,
-and keep me in Your peace today. Amen.</div>
-    <h3>Blessing your home</h3>
-    <p>Walk through each room with your family. Sprinkle a few drops at the door of each room and pray:</p>
-    <div class="prayer">Lord, bless this room and all who live here.
-Keep far from us all evil, and fill this home with Your peace.
-Saint Anthony, pray for us. Amen.</div>
-    <div class="note">Blessed water is a sacramental: a sign of faith that disposes the heart to receive God's grace. It does not replace medical care or professional help.</div>` }
+    <h3>Bénédiction du matin</h3>
+    <p>Touchez l'eau du bout des doigts et faites le signe de la croix en priant :</p>
+    <div class="prayer">Par cette eau bénite,
+et par votre Précieux Sang,
+lavez tous mes péchés, Seigneur,
+et gardez-moi dans votre paix aujourd'hui. Amen.</div>
+    <h3>Bénir votre maison</h3>
+    <p>Parcourez chaque pièce avec votre famille. Aspergez quelques gouttes à l'entrée de chaque pièce et priez :</p>
+    <div class="prayer">Seigneur, bénis cette pièce et tous ceux qui vivent ici.
+Éloigne de nous tout mal, et remplis cette maison de ta paix.
+Saint Antoine, priez pour nous. Amen.</div>
+    <div class="note">L'eau bénite est un sacramental : un signe de foi qui dispose le cœur à recevoir la grâce de Dieu. Elle ne remplace ni les soins médicaux ni l'aide d'un professionnel.</div>` }
 ];
 
 const W12 = {
-  prayer:"Lord, here I am. Speak to my heart; I trust in You.",
+  prayer:"Seigneur, me voici. Parle à mon cœur, je me confie en Toi.",
   days:[
-    { t:"Here I am", ref:"1 Samuel 3:10", v:"Speak; for thy servant heareth.", r:"Young Samuel did not understand who was calling him, but he answered with availability. Today, simply tell God: I am here. You do not need perfect words.", p:"Pray the 12 words when you wake up, at noon and before sleeping." },
-    { t:"Listening", ref:"Psalm 46:10", v:"Be still, and know that I am God.", r:"God speaks in silence. Today, after praying the 12 words, stay quiet for one full minute without asking for anything.", p:"Spend one minute of silence after each time you pray." },
-    { t:"Trust", ref:"Proverbs 3:5-6", v:"Trust in the LORD with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.", r:"Trust is choosing to rest in God when you do not see the whole road. Name one situation you are trying to control alone.", p:"Write that situation in the Journal and give it to God with the 12 words." },
-    { t:"Releasing worry", ref:"Philippians 4:6-7", v:"Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God.", r:"Worry repeats the problem. Prayer places it in God's hands. Each time a worry returns today, answer it with the 12 words.", p:"Every time you feel anxious, pray the 12 words slowly." },
-    { t:"Forgiveness", ref:"Colossians 3:13", v:"Even as Christ forgave you, so also do ye.", r:"Resentment closes the heart. Forgiving does not mean that what happened was right; it means you no longer let it rule you.", p:"Pray the 12 words for one person you need to forgive." },
-    { t:"Gratitude", ref:"1 Thessalonians 5:18", v:"In every thing give thanks.", r:"A grateful heart sees God's answers more easily. Today, look for small graces: a kind word, a solved problem, a moment of peace.", p:"Write three things you are grateful for in the Journal." },
-    { t:"Walking with God", ref:"Micah 6:8", v:"What doth the LORD require of thee, but to do justly, and to love mercy, and to walk humbly with thy God?", r:"Prayer becomes life. On this last day, offer God your whole week and choose one act of love to do today.", p:"Do one concrete act of kindness and pray the 12 words for that person." }
+    { t:"Me voici", ref:"1 Samuel 3:10", v:"Parle, car ton serviteur écoute.", r:"Le jeune Samuel ne comprenait pas qui l'appelait, mais il a répondu avec disponibilité. Aujourd'hui, dites simplement à Dieu : je suis là. Vous n'avez pas besoin de mots parfaits.", p:"Priez les 12 mots au réveil, à midi et avant de dormir." },
+    { t:"Écouter", ref:"Psaume 46:11", v:"Arrêtez, et sachez que je suis Dieu.", r:"Dieu parle dans le silence. Aujourd'hui, après avoir prié les 12 mots, restez une minute entière en silence sans rien demander.", p:"Passez une minute de silence après chaque prière." },
+    { t:"La confiance", ref:"Proverbes 3:5-6", v:"Confie-toi en l'Éternel de tout ton cœur, et ne t'appuie pas sur ta sagesse ; reconnais-le dans toutes tes voies, et il aplanira tes sentiers.", r:"La confiance, c'est choisir de se reposer en Dieu quand on ne voit pas toute la route. Nommez une situation que vous essayez de contrôler seul.", p:"Écrivez cette situation dans le Journal et confiez-la à Dieu avec les 12 mots." },
+    { t:"Lâcher l'inquiétude", ref:"Philippiens 4:6", v:"Ne vous inquiétez de rien ; mais en toute chose faites connaître vos besoins à Dieu par des prières et des supplications, avec des actions de grâces.", r:"L'inquiétude répète le problème. La prière le dépose entre les mains de Dieu. Chaque fois qu'une inquiétude revient aujourd'hui, répondez-lui par les 12 mots.", p:"Chaque fois que vous vous sentez anxieux, priez lentement les 12 mots." },
+    { t:"Le pardon", ref:"Colossiens 3:13", v:"De même que Christ vous a pardonné, pardonnez-vous aussi.", r:"La rancune ferme le cœur. Pardonner ne veut pas dire que ce qui s'est passé était juste ; cela veut dire que vous ne le laissez plus vous gouverner.", p:"Priez les 12 mots pour une personne à qui vous devez pardonner." },
+    { t:"La gratitude", ref:"1 Thessaloniciens 5:18", v:"Rendez grâces en toutes choses.", r:"Un cœur reconnaissant voit plus facilement les réponses de Dieu. Aujourd'hui, cherchez les petites grâces : une parole aimable, un problème résolu, un moment de paix.", p:"Écrivez trois raisons de dire merci dans le Journal." },
+    { t:"Marcher avec Dieu", ref:"Michée 6:8", v:"Ce que l'Éternel demande de toi, c'est que tu pratiques la justice, que tu aimes la miséricorde, et que tu marches humblement avec ton Dieu.", r:"La prière devient vie. En ce dernier jour, offrez à Dieu toute votre semaine et choisissez un geste d'amour à faire aujourd'hui.", p:"Faites un geste concret de bonté et priez les 12 mots pour cette personne." }
   ]
 };
 
 const BENEDICT_HTML = `
-  <span class="eyebrow">Gift 3</span><h1>The Prayer of Saint Benedict</h1>
-  <p>Saint Benedict (480–547) is the father of Western monasticism. His medal, one of the most loved in the Church, carries a short Latin prayer of protection against evil, through the power of the Cross.</p>
-  <h3>The prayer of the medal</h3>
+  <span class="eyebrow">Cadeau 3</span><h1>La Prière de Saint Benoît</h1>
+  <p>Saint Benoît (480–547) est le père du monachisme occidental. Sa médaille, l'une des plus aimées de l'Église, porte une courte prière latine de protection contre le mal, par la puissance de la Croix.</p>
+  <h3>La prière de la médaille</h3>
   <div class="latin">Crux sacra sit mihi lux,
 non draco sit mihi dux.
 Vade retro, Satana,
@@ -548,120 +546,120 @@ numquam suade mihi vana.
 Sunt mala quae libas,
 ipse venena bibas.</div>
   <div class="divider"></div>
-  <div class="prayer">May the holy Cross be my light,
-let not the dragon be my guide.
-Begone, Satan,
-never tempt me with your vanities.
-What you offer me is evil,
-drink the poison yourself.</div>
-  <h3 style="margin-top:22px">The letters of the medal</h3>
+  <div class="prayer">Que la sainte Croix soit ma lumière,
+que le dragon ne soit pas mon guide.
+Retire-toi, Satan,
+ne me conseille jamais tes vanités.
+Ce que tu m'offres est mauvais,
+bois toi-même tes poisons.</div>
+  <h3 style="margin-top:22px">Les lettres de la médaille</h3>
   <ul class="plain">
-    <li><b>C S P B</b> — Crux Sancti Patris Benedicti: the Cross of our Holy Father Benedict.</li>
-    <li><b>C S S M L</b> — Crux Sacra Sit Mihi Lux: may the holy Cross be my light.</li>
-    <li><b>N D S M D</b> — Non Draco Sit Mihi Dux: let not the dragon be my guide.</li>
+    <li><b>C S P B</b> — Crux Sancti Patris Benedicti : la Croix de notre saint Père Benoît.</li>
+    <li><b>C S S M L</b> — Crux Sacra Sit Mihi Lux : que la sainte Croix soit ma lumière.</li>
+    <li><b>N D S M D</b> — Non Draco Sit Mihi Dux : que le dragon ne soit pas mon guide.</li>
     <li><b>V R S N S M V</b> — Vade Retro Satana, Numquam Suade Mihi Vana.</li>
     <li><b>S M Q L I V B</b> — Sunt Mala Quae Libas, Ipse Venena Bibas.</li>
   </ul>
-  <h3>Prayer for protection and blessings</h3>
-  <div class="prayer">Saint Benedict, faithful servant of God,
-by the power of the holy Cross of Jesus,
-protect me, my family and my home from every evil.
+  <h3>Prière de protection et de bénédiction</h3>
+  <div class="prayer">Saint Benoît, fidèle serviteur de Dieu,
+par la puissance de la sainte Croix de Jésus,
+protégez-moi, ma famille et ma maison de tout mal.
 
-Keep far from us discord, fear and temptation.
-Open our lives to the blessings God has prepared:
-peace in the heart, unity at home,
-work for our hands and bread on our table.
+Éloignez de nous la discorde, la peur et la tentation.
+Ouvrez nos vies aux bénédictions que Dieu a préparées :
+la paix du cœur, l'unité au foyer,
+du travail pour nos mains et du pain sur notre table.
 
-Teach us your motto: <em>Ora et labora</em>, pray and work. Amen.</div>
-  <div class="note">When to pray it: in the morning before leaving home, at night before sleeping, and whenever you feel afraid or troubled.</div>`;
+Apprenez-nous votre devise : <em>Ora et labora</em>, prie et travaille. Amen.</div>
+  <div class="note">Quand la prier : le matin avant de quitter la maison, le soir avant de dormir, et chaque fois que vous vous sentez inquiet ou troublé.</div>`;
 
 const SIGNS = [
-  ["A word that keeps finding you","The same Bible verse or phrase appears in different places in a few days. Stop and read it in prayer: it may be a word for your season."],
-  ["Peace that does not match the situation","Your problem is still there, but your heart is calm. This peace \"which passeth all understanding\" is often God's first answer."],
-  ["A door that closes gently","Something you wanted does not happen. Before despairing, ask: is God protecting me or preparing something better?"],
-  ["A door that opens unexpectedly","An invitation, a contact, an opportunity you did not seek. Pray about it before saying yes, and notice if peace remains."],
-  ["The right person at the right time","Someone calls, visits or says exactly what you needed to hear. God often answers through people."],
-  ["A thought that returns in prayer","An idea or a name keeps coming back while you pray. Write it down and pray over it for a few days."],
-  ["A desire to forgive","You suddenly feel able to let go of a hurt you carried for a long time. That is grace at work."],
-  ["A gentle correction of conscience","You feel uneasy about a habit or decision. It is not condemnation, it is an invitation to change."],
-  ["Comfort in tears","You cried in prayer and afterwards felt lighter. Tears offered to God are never wasted."],
-  ["The same advice from different people","Two or three trusted people, without knowing each other, tell you the same thing. Take it seriously."],
-  ["A small provision when you needed it","Exactly what you needed for today arrived: help, a solution, a meal. Give thanks for daily bread."],
-  ["Strength to keep going","You did not get out of the difficulty, but you received strength to go through it. That is also an answer."],
-  ["Silence after prayer","Sometimes God's answer is \"wait\". Silence is not absence: keep praying with trust."],
-  ["Growing love for others","You notice more patience with your family and more compassion for others. This is a sure sign of God's presence."],
-  ["Gratitude that rises without reason","You feel thankful even on an ordinary day. A grateful heart is a heart close to God."]
+  ["Une parole qui revient vers vous","Le même verset ou la même phrase apparaît en différents endroits en quelques jours. Arrêtez-vous et lisez-le dans la prière : c'est peut-être une parole pour cette période de votre vie."],
+  ["Une paix qui ne correspond pas à la situation","Votre problème est toujours là, mais votre cœur est calme. Cette paix « qui surpasse toute intelligence » est souvent la première réponse de Dieu."],
+  ["Une porte qui se ferme doucement","Quelque chose que vous désiriez ne se réalise pas. Avant de désespérer, demandez-vous : Dieu me protège-t-il, ou me prépare-t-il quelque chose de meilleur ?"],
+  ["Une porte qui s'ouvre de façon inattendue","Une invitation, un contact, une occasion que vous n'aviez pas cherchée. Priez avant de dire oui, et voyez si la paix demeure."],
+  ["La bonne personne au bon moment","Quelqu'un appelle, vous rend visite ou dit exactement ce que vous aviez besoin d'entendre. Dieu répond souvent à travers les personnes."],
+  ["Une pensée qui revient dans la prière","Une idée ou un nom revient sans cesse pendant que vous priez. Notez-le et priez à son sujet pendant quelques jours."],
+  ["Le désir de pardonner","Vous vous sentez soudain capable de lâcher une blessure portée depuis longtemps. C'est la grâce à l'œuvre."],
+  ["Une douce correction de la conscience","Vous êtes mal à l'aise avec une habitude ou une décision. Ce n'est pas une condamnation, c'est une invitation à changer."],
+  ["Le réconfort dans les larmes","Vous avez pleuré dans la prière et vous vous êtes senti plus léger ensuite. Les larmes offertes à Dieu ne sont jamais perdues."],
+  ["Le même conseil de personnes différentes","Deux ou trois personnes de confiance, sans se connaître, vous disent la même chose. Prenez-le au sérieux."],
+  ["Un petit secours au moment voulu","Ce dont vous aviez besoin pour aujourd'hui est arrivé : une aide, une solution, un repas. Rendez grâce pour le pain quotidien."],
+  ["La force de continuer","Vous n'êtes pas sorti de la difficulté, mais vous avez reçu la force de la traverser. C'est aussi une réponse."],
+  ["Le silence après la prière","Parfois la réponse de Dieu est « attends ». Le silence n'est pas l'absence : continuez à prier avec confiance."],
+  ["Un amour grandissant pour les autres","Vous remarquez plus de patience avec votre famille et plus de compassion pour les autres. C'est un signe sûr de la présence de Dieu."],
+  ["Une gratitude qui monte sans raison","Vous vous sentez reconnaissant même un jour ordinaire. Un cœur reconnaissant est un cœur proche de Dieu."]
 ];
 const BLESS_CARDS = [
-  ["The LORD bless thee, and keep thee: the LORD make his face shine upon thee, and be gracious unto thee: the LORD lift up his countenance upon thee, and give thee peace.","Numbers 6:24-26"],
-  ["For he shall give his angels charge over thee, to keep thee in all thy ways.","Psalm 91:11"],
-  ["The LORD shall preserve thy going out and thy coming in from this time forth, and even for evermore.","Psalm 121:8"],
-  ["Fear thou not; for I am with thee: be not dismayed; for I am thy God: I will strengthen thee; yea, I will help thee.","Isaiah 41:10"]
+  ["Que l'Éternel te bénisse, et qu'il te garde ! Que l'Éternel fasse luire sa face sur toi, et qu'il t'accorde sa grâce ! Que l'Éternel tourne sa face vers toi, et qu'il te donne la paix !","Nombres 6:24-26"],
+  ["Car il ordonnera à ses anges de te garder dans toutes tes voies.","Psaume 91:11"],
+  ["L'Éternel gardera ton départ et ton arrivée, dès maintenant et à jamais.","Psaume 121:8"],
+  ["Ne crains rien, car je suis avec toi ; ne promène pas des regards inquiets, car je suis ton Dieu ; je te fortifie, je viens à ton secours.","Ésaïe 41:10"]
 ];
 
-const PSALM_PRAYER = `Lord, You are my shepherd; I shall not want.
-I commit my way to You, and I trust in You.
+const PSALM_PRAYER = `Seigneur, tu es mon berger : je ne manquerai de rien.
+Je te recommande mon chemin, et je mets en toi ma confiance.
 
-Establish the work of my hands.
-Give me wisdom to use well what I receive,
-strength to work with honesty,
-and a generous heart to share.
+Affermis l'ouvrage de mes mains.
+Donne-moi la sagesse de bien utiliser ce que je reçois,
+la force de travailler avec honnêteté,
+et un cœur généreux pour partager.
 
-Make me like a tree planted by the rivers of water,
-that brings forth its fruit in its season.
+Rends-moi semblable à un arbre planté près d'un courant d'eau,
+qui donne son fruit en sa saison.
 
-Free me from fear of lack,
-and fill my home with Your peace and Your provision.
-In the name of Jesus. Amen.`;
+Délivre-moi de la peur du manque,
+et remplis ma maison de ta paix et de ta providence.
+Au nom de Jésus. Amen.`;
 
 const SOLOMON = [
-  { t:"Ask for wisdom first", ref:"1 Kings 3:9 · Proverbs 4:7", v:"Wisdom is the principal thing; therefore get wisdom: and with all thy getting get understanding.",
-    r:"When God offered Solomon anything he wanted, he did not ask for riches. He asked for \"an understanding heart\". Scripture says that God was pleased and gave him much more. True abundance starts with wise decisions.",
-    p:"Before any important money decision, pray James 1:5 and wait 24 hours before deciding." },
-  { t:"Work with diligence", ref:"Proverbs 10:4", v:"He becometh poor that dealeth with a slack hand: but the hand of the diligent maketh rich.",
-    r:"Scripture honours work done with care and constancy. Diligence is not working without rest; it is doing well what is in front of you, day after day.",
-    p:"Choose one task you have been postponing and finish it today." },
-  { t:"Plan and write it down", ref:"Proverbs 21:5 · Habakkuk 2:2", v:"The thoughts of the diligent tend only to plenteousness; but of every one that is hasty only to want.",
-    r:"\"Write the vision, and make it plain.\" Hurry and impulse lead to lack. A simple written plan brings clarity and peace.",
-    p:"On one sheet of paper, write your monthly income and your fixed expenses." },
-  { t:"Know the state of your flocks", ref:"Proverbs 27:23", v:"Be thou diligent to know the state of thy flocks, and look well to thy herds.",
-    r:"In Solomon's time, wealth was counted in flocks. Today it means knowing your accounts. What we look at with care, we manage well.",
-    p:"Pick a fixed day each week to review your accounts calmly, with a short prayer." },
-  { t:"Store a little, avoid the trap of debt", ref:"Proverbs 21:20 · 22:7", v:"There is treasure to be desired and oil in the dwelling of the wise; but a foolish man spendeth it up.",
-    r:"\"The borrower is servant to the lender.\" Saving even a little, and paying debts step by step, brings freedom.",
-    p:"Set aside a small amount every week, even a coin. List your debts from the smallest to the largest." },
-  { t:"Seek good counsel", ref:"Proverbs 15:22", v:"Without counsel purposes are disappointed: but in the multitude of counsellors they are established.",
-    r:"Solomon and David surrounded themselves with counsellors. Humility to ask for advice protects us from many mistakes.",
-    p:"Before a big decision, talk to someone you trust, or to a qualified professional." },
-  { t:"Give with open hands and give thanks", ref:"Proverbs 11:25 · 1 Chronicles 29:14", v:"For all things come of thee, and of thine own have we given thee.",
-    r:"King David recognised that everything comes from God. Generosity and gratitude free the heart from fear and open it to receive.",
-    p:"Do one act of generosity this week and write a gratitude list in the Journal." }
+  { t:"Demander d'abord la sagesse", ref:"1 Rois 3:9 · Proverbes 4:7", v:"Voici le commencement de la sagesse : acquiers la sagesse, et avec tout ce que tu possèdes acquiers l'intelligence.",
+    r:"Quand Dieu proposa à Salomon tout ce qu'il désirait, il ne demanda pas la richesse. Il demanda « un cœur intelligent ». L'Écriture dit que cela plut à Dieu, qui lui donna bien davantage. La vraie abondance commence par des décisions sages.",
+    p:"Avant toute décision importante d'argent, priez Jacques 1:5 et attendez 24 heures avant de décider." },
+  { t:"Travailler avec diligence", ref:"Proverbes 10:4", v:"Celui qui agit d'une main lâche s'appauvrit, mais la main des diligents enrichit.",
+    r:"L'Écriture honore le travail fait avec soin et constance. La diligence, ce n'est pas travailler sans repos ; c'est bien faire ce qui est devant vous, jour après jour.",
+    p:"Choisissez une tâche que vous repoussez depuis longtemps et terminez-la aujourd'hui." },
+  { t:"Planifier et l'écrire", ref:"Proverbes 21:5 · Habacuc 2:2", v:"Les projets de l'homme diligent ne mènent qu'à l'abondance, mais celui qui agit avec précipitation n'arrive qu'à la disette.",
+    r:"« Écris la prophétie : grave-la sur des tables. » La précipitation et l'impulsion mènent au manque. Un plan simple, écrit, apporte clarté et paix.",
+    p:"Sur une feuille, écrivez vos revenus du mois et vos dépenses fixes." },
+  { t:"Connaître l'état de ses troupeaux", ref:"Proverbes 27:23", v:"Connais bien chacune de tes brebis, donne tes soins à tes troupeaux.",
+    r:"Au temps de Salomon, la richesse se comptait en troupeaux. Aujourd'hui, cela signifie connaître ses comptes. Ce que l'on regarde avec soin, on le gère bien.",
+    p:"Choisissez un jour fixe chaque semaine pour regarder vos comptes calmement, avec une courte prière." },
+  { t:"Mettre un peu de côté, éviter le piège des dettes", ref:"Proverbes 21:20 · 22:7", v:"De précieux trésors et de l'huile sont dans la demeure du sage ; mais l'homme insensé les engloutit.",
+    r:"« Celui qui emprunte est l'esclave de celui qui prête. » Épargner même un peu, et rembourser ses dettes pas à pas, apporte la liberté.",
+    p:"Mettez de côté une petite somme chaque semaine, même une pièce. Listez vos dettes de la plus petite à la plus grande." },
+  { t:"Chercher de bons conseils", ref:"Proverbes 15:22", v:"Les projets échouent, faute d'une assemblée qui délibère ; mais ils réussissent quand il y a de nombreux conseillers.",
+    r:"Salomon et David s'entouraient de conseillers. L'humilité de demander conseil nous protège de bien des erreurs.",
+    p:"Avant une grande décision, parlez-en à une personne de confiance ou à un professionnel qualifié." },
+  { t:"Donner à mains ouvertes et rendre grâce", ref:"Proverbes 11:25 · 1 Chroniques 29:14", v:"Tout vient de toi, et nous recevons de ta main ce que nous t'offrons.",
+    r:"Le roi David reconnaissait que tout vient de Dieu. La générosité et la gratitude libèrent le cœur de la peur et l'ouvrent pour recevoir.",
+    p:"Faites un geste de générosité cette semaine et écrivez une liste de gratitude dans le Journal." }
 ];
 
 const GIFTS = [
-  { id:"manuscript", n:1, t:"The Manuscript of Saint Anthony", sub:"His most loved prayers + the Blessed Water Ritual" },
-  { id:"w12", n:2, t:"The 12-Word Prayer", sub:"A 7-day journey of connection with God" },
-  { id:"benedict", n:3, t:"The Prayer of Saint Benedict", sub:"Protection and blessings for your life" },
-  { id:"signs", n:4, t:"The Secrets of Divine Signs", sub:"15 signs God may be sending you + blessings for loved ones" },
-  { id:"psalm", n:5, t:"The One-Minute Psalm Prayer", sub:"Peace and trust about provision, in 60 seconds" },
-  { id:"solomon", n:6, t:"The Abundance Bible of King Solomon", sub:"7 biblical habits for a life of wise prosperity" }
+  { id:"manuscript", n:1, t:"Le Manuscrit de Saint Antoine", sub:"Ses prières les plus aimées + le Rituel de l'eau bénite" },
+  { id:"w12", n:2, t:"La Prière des 12 Mots", sub:"Un parcours de 7 jours de connexion avec Dieu" },
+  { id:"benedict", n:3, t:"La Prière de Saint Benoît", sub:"Protection et bénédictions pour votre vie" },
+  { id:"signs", n:4, t:"Les Secrets des Signes Divins", sub:"15 signes que Dieu vous envoie peut-être + bénédictions pour vos proches" },
+  { id:"psalm", n:5, t:"La Prière d'une Minute des Psaumes", sub:"Paix et confiance face aux besoins matériels, en 60 secondes" },
+  { id:"solomon", n:6, t:"La Bible de l'Abondance du Roi Salomon", sub:"7 habitudes bibliques pour une prospérité sage" }
 ];
 
 const DAILY = [
-  ["The LORD is my shepherd; I shall not want.","Psalm 23:1"],
-  ["Trust in the LORD with all thine heart; and lean not unto thine own understanding.","Proverbs 3:5"],
-  ["Peace I leave with you, my peace I give unto you… Let not your heart be troubled, neither let it be afraid.","John 14:27"],
-  ["It is of the LORD's mercies that we are not consumed, because his compassions fail not. They are new every morning.","Lamentations 3:22-23"],
-  ["Delight thyself also in the LORD; and he shall give thee the desires of thine heart.","Psalm 37:4"],
-  ["But seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you.","Matthew 6:33"],
-  ["And we know that all things work together for good to them that love God.","Romans 8:28"],
-  ["Rejoicing in hope; patient in tribulation; continuing instant in prayer.","Romans 12:12"],
-  ["For I know the thoughts that I think toward you, saith the LORD, thoughts of peace, and not of evil.","Jeremiah 29:11"],
-  ["Cause me to hear thy lovingkindness in the morning; for in thee do I trust.","Psalm 143:8"],
-  ["Commit thy way unto the LORD; trust also in him; and he shall bring it to pass.","Psalm 37:5"],
-  ["Fear thou not; for I am with thee: be not dismayed; for I am thy God.","Isaiah 41:10"],
-  ["Come unto me, all ye that labour and are heavy laden, and I will give you rest.","Matthew 11:28"],
-  ["The LORD is nigh unto all them that call upon him.","Psalm 145:18"]
+  ["L'Éternel est mon berger : je ne manquerai de rien.","Psaume 23:1"],
+  ["Confie-toi en l'Éternel de tout ton cœur, et ne t'appuie pas sur ta sagesse.","Proverbes 3:5"],
+  ["Je vous laisse la paix, je vous donne ma paix… Que votre cœur ne se trouble point, et ne s'alarme point.","Jean 14:27"],
+  ["Les bontés de l'Éternel ne sont pas épuisées, ses compassions ne sont pas à leur terme ; elles se renouvellent chaque matin.","Lamentations 3:22-23"],
+  ["Fais de l'Éternel tes délices, et il te donnera ce que ton cœur désire.","Psaume 37:4"],
+  ["Cherchez premièrement le royaume et la justice de Dieu ; et toutes ces choses vous seront données par-dessus.","Matthieu 6:33"],
+  ["Nous savons, du reste, que toutes choses concourent au bien de ceux qui aiment Dieu.","Romains 8:28"],
+  ["Réjouissez-vous en espérance. Soyez patients dans l'affliction. Persévérez dans la prière.","Romains 12:12"],
+  ["Car je connais les projets que j'ai formés sur vous, dit l'Éternel, projets de paix et non de malheur.","Jérémie 29:11"],
+  ["Fais-moi dès le matin entendre ta bonté ! Car je me confie en toi.","Psaume 143:8"],
+  ["Recommande ton sort à l'Éternel, mets en lui ta confiance, et il agira.","Psaume 37:5"],
+  ["Ne crains rien, car je suis avec toi ; ne promène pas des regards inquiets, car je suis ton Dieu.","Ésaïe 41:10"],
+  ["Venez à moi, vous tous qui êtes fatigués et chargés, et je vous donnerai du repos.","Matthieu 11:28"],
+  ["L'Éternel est près de tous ceux qui l'invoquent.","Psaume 145:18"]
 ];
 
 /* ---------- state ---------- */
@@ -686,16 +684,16 @@ function currentIntention(){ return journal().find(e => e.type === "intention" &
 /* ---------- views ---------- */
 function greeting(){
   const h = new Date().getHours();
-  return h < 12 ? "Good morning" : h < 18 ? "Good afternoon" : "Good evening";
+  return h < 18 ? "Bonjour" : "Bonsoir";
 }
 function weekHTML(){
   const set = new Set(prayedDays()), out = [], today = new Date();
   for(let i = 6; i >= 0; i--){
     const d = new Date(today); d.setDate(today.getDate() - i);
-    const lbl = d.toLocaleDateString("en", { weekday:"narrow" });
+    const lbl = d.toLocaleDateString("fr", { weekday:"narrow" });
     out.push(`<div>${lbl}<span class="${set.has(dayKey(d)) ? "done" : ""} ${i === 0 ? "today" : ""}">${set.has(dayKey(d)) ? "✓" : d.getDate()}</span></div>`);
   }
-  return `<div class="week" aria-label="Your last 7 days">${out.join("")}</div>`;
+  return `<div class="week" aria-label="Vos 7 derniers jours">${out.join("")}</div>`;
 }
 function viewHome(){
   const doneToday = prayedDays().includes(dayKey());
@@ -706,86 +704,87 @@ function viewHome(){
   return `
   <section class="card hero">
     <span class="eyebrow">${greeting()}</span>
-    <h1>${doneToday ? "You prayed today. God bless your day." : "Your 8 minutes with Saint Anthony"}</h1>
-    <p>${doneToday ? "Come back tomorrow morning to continue. Faithfulness, day after day, is what transforms." : "Find a quiet place. The app will guide you through the 8 moments of the Sacred Prayer."}</p>
-    <button class="btn goldbtn block" data-action="start">${doneToday ? "Pray again" : "Begin the Sacred Prayer"}</button>
+    <h1>${doneToday ? "Vous avez prié aujourd'hui. Que Dieu bénisse votre journée." : "Vos 8 minutes avec Saint Antoine"}</h1>
+    <p>${doneToday ? "Revenez demain matin pour continuer. C'est la fidélité, jour après jour, qui transforme." : "Trouvez un endroit calme. L'application vous guidera à travers les 8 moments de la Prière Sacrée."}</p>
+    <button class="btn goldbtn block" data-action="start">${doneToday ? "Prier à nouveau" : "Commencer la Prière Sacrée"}</button>
     ${weekHTML()}
-    <p style="margin:12px 0 0;font-size:.86rem">${s > 0 ? `🔥 ${s} day${s > 1 ? "s" : ""} in a row` : "Start your first day today"}</p>
+    <p style="margin:12px 0 0;font-size:.86rem">${s > 0 ? `🔥 ${s} jour${s > 1 ? "s" : ""} d'affilée` : "Commencez votre premier jour aujourd'hui"}</p>
   </section>
   ${installCard()}
   <section class="card">
-    <span class="eyebrow">Word for today</span>
+    <span class="eyebrow">Parole du jour</span>
     <p class="verse">${vt}</p><span class="ref">${vr}</span>
   </section>
   <section class="card">
-    <span class="eyebrow">Your intention</span>
-    ${intent ? `<p style="font-family:var(--serif);font-size:1.2rem;margin-bottom:.6em">${esc(intent.text)}</p><button class="link" data-tab="journal">Open Journal</button>`
-      : `<p class="muted">Write the grace you are asking for. It will appear during your prayer.</p><button class="btn block" data-action="new-intention">Write my intention</button>`}
+    <span class="eyebrow">Votre intention</span>
+    ${intent ? `<p style="font-family:var(--serif);font-size:1.2rem;margin-bottom:.6em">${esc(intent.text)}</p><button class="link" data-tab="journal">Ouvrir le Journal</button>`
+      : `<p class="muted">Écrivez la grâce que vous demandez. Elle apparaîtra pendant votre prière.</p><button class="btn block" data-action="new-intention">Écrire mon intention</button>`}
   </section>
-  <h2 style="margin-top:22px">Your gifts</h2>
+  <h2 style="margin-top:22px">Vos cadeaux</h2>
   <div class="list">${GIFTS.slice(0,3).map(giftItem).join("")}</div>
-  <p class="center" style="margin-top:12px"><button class="link" data-tab="gifts">See all 6 gifts</button></p>
-  <p class="footer-note">A devotional app. It does not replace medical, psychological, legal or financial advice.</p>`;
+  <p class="center" style="margin-top:12px"><button class="link" data-tab="gifts">Voir les 6 cadeaux</button></p>
+  <p class="footer-note">Application de dévotion. Elle ne remplace pas un avis médical, psychologique, juridique ou financier.</p>`;
 }
 function giftItem(g){
-  return `<button class="item" data-gift="${g.id}"><span class="num">${g.n}</span><span><span class="tag">Gift ${g.n}</span><strong>${g.t}</strong><span class="sub">${g.sub}</span></span>${CHEV}</button>`;
+  return `<button class="item" data-gift="${g.id}"><span class="num">${g.n}</span><span><span class="tag">Cadeau ${g.n}</span><strong>${g.t}</strong><span class="sub">${g.sub}</span></span>${CHEV}</button>`;
 }
 function viewPrayer(){
   const total = SACRED_STEPS.reduce((a, s) => a + s.secs, 0);
   return `
   <section class="card hero">
-    <span class="eyebrow">The main prayer</span>
-    <h1>The Sacred Prayer of Saint Anthony</h1>
-    <p>Eight moments, ${Math.round(total/60)} minutes, every morning. A guided prayer to entrust your day, your family and your needs to God, through the intercession of Saint Anthony of Padua.</p>
-    <button class="btn goldbtn block" data-action="start">Begin guided prayer</button>
+    <span class="eyebrow">La prière principale</span>
+    <h1>La Prière Sacrée de Saint Antoine</h1>
+    <p>Huit moments, ${Math.round(total/60)} minutes, chaque matin. Une prière guidée pour confier votre journée, votre famille et vos besoins à Dieu, par l'intercession de Saint Antoine de Padoue.</p>
+    <button class="btn goldbtn block" data-action="start">Commencer la prière guidée</button>
   </section>
   <div class="row2" style="margin-bottom:22px">
-    <button class="btn" data-action="read-full">Read the full text</button>
-    <button class="btn" data-teach="how">How to pray it</button>
+    <button class="btn" data-action="read-full">Lire le texte complet</button>
+    <button class="btn" data-teach="how">Comment la prier</button>
   </div>
-  <h2>The 8 moments</h2>
+  <h2>Les 8 moments</h2>
   <div class="list">${SACRED_STEPS.map((s, i) => `<div class="item" style="grid-template-columns:48px 1fr"><span class="num">${i+1}</span><span><strong>${s.t}</strong><span class="sub">${fmtTime(s.secs)} · ${s.instr}</span></span></div>`).join("")}</div>
-  <h2 style="margin-top:26px">Deepen your prayer</h2>
+  <h2 style="margin-top:26px">Approfondir votre prière</h2>
   <div class="list">
-    <button class="item" data-teach="angel"><span class="num">✦</span><span><strong>Your Guardian Angel</strong><span class="sub">The friend God placed beside you</span></span>${CHEV}</button>
-    <button class="item" data-teach="mistake"><span class="num">✦</span><span><strong>The most common mistake in prayer</strong><span class="sub">And how to correct it</span></span>${CHEV}</button>
-    <button class="item" data-action="questions"><span class="num">✦</span><span><strong>3 questions about your prayer life</strong><span class="sub">A short reflection</span></span>${CHEV}</button>
+    <button class="item" data-teach="angel"><span class="num">✦</span><span><strong>Votre Ange gardien</strong><span class="sub">L'ami que Dieu a placé à vos côtés</span></span>${CHEV}</button>
+    <button class="item" data-teach="mistake"><span class="num">✦</span><span><strong>L'erreur la plus fréquente dans la prière</strong><span class="sub">Et comment la corriger</span></span>${CHEV}</button>
+    <button class="item" data-action="questions"><span class="num">✦</span><span><strong>3 questions sur votre vie de prière</strong><span class="sub">Une courte réflexion</span></span>${CHEV}</button>
   </div>`;
 }
 function viewGifts(){
-  return `<span class="eyebrow">Included with your prayer</span><h1>Your 6 gifts</h1>
-  <p class="muted">Everything is unlocked and works offline once the app is installed.</p>
+  return `<span class="eyebrow">Inclus avec votre prière</span><h1>Vos 6 cadeaux</h1>
+  <p class="muted">Tout est débloqué et fonctionne hors connexion une fois l'application installée.</p>
   <div class="list">${GIFTS.map(giftItem).join("")}</div>`;
 }
 let jFilter = "all";
 function viewJournal(){
   const j = journal();
   const list = j.filter(e => jFilter === "all" || e.type === jFilter);
-  const label = { intention:"Intention", sign:"Sign", thanks:"Gratitude" };
-  return `<span class="eyebrow">Your private notebook</span><h1>Journal</h1>
-  <p class="muted">Write your intentions, the signs you notice and what you are grateful for. Everything stays only on this phone.</p>
-  <div class="row" style="margin-bottom:16px">
-    <button class="btn primary" data-action="new-intention" style="flex:1">+ Intention</button>
-    <button class="btn" data-action="new-sign" style="flex:1">+ Sign</button>
-    <button class="btn" data-action="new-thanks" style="flex:1">+ Gratitude</button>
+  const label = { intention:"Intention", sign:"Signe", thanks:"Gratitude" };
+  return `<span class="eyebrow">Votre carnet personnel</span><h1>Journal</h1>
+  <p class="muted">Écrivez vos intentions, les signes que vous remarquez et vos raisons de dire merci. Tout reste uniquement sur ce téléphone.</p>
+  <div style="display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:8px;margin-bottom:16px">
+    <button class="btn primary" data-action="new-intention" style="padding:12px 6px;white-space:nowrap">+ Intention</button>
+    <button class="btn" data-action="new-sign" style="padding:12px 6px;white-space:nowrap">+ Signe</button>
+    <button class="btn" data-action="new-thanks" style="padding:12px 6px;white-space:nowrap">+ Merci</button>
   </div>
-  <div class="seg" style="grid-template-columns:repeat(4,1fr)" role="group" aria-label="Filter">
-    ${[["all","All"],["intention","Intentions"],["sign","Signs"],["thanks","Gratitude"]].map(([k, l]) => `<button data-jf="${k}" aria-pressed="${jFilter===k}">${l}</button>`).join("")}
+  <div class="seg" style="grid-template-columns:repeat(4,1fr)" role="group" aria-label="Filtrer">
+    ${[["all","Tout"],["intention","Intentions"],["sign","Signes"],["thanks","Gratitude"]].map(([k, l]) => `<button data-jf="${k}" aria-pressed="${jFilter===k}">${l}</button>`).join("")}
   </div>
   ${list.length ? list.map(e => `<div class="entry ${e.answered ? "answered" : ""}">
-      <div class="meta"><span>${label[e.type]}${e.answered ? " · <b style=\"color:var(--ok)\">Answered ✓</b>" : ""}</span><span>${new Date(e.date).toLocaleDateString("en",{day:"numeric",month:"short",year:"numeric"})}</span></div>
+      <div class="meta"><span>${label[e.type]}${e.answered ? " · <b style=\"color:var(--ok)\">Exaucée ✓</b>" : ""}</span><span>${new Date(e.date).toLocaleDateString("fr",{day:"numeric",month:"short",year:"numeric"})}</span></div>
       <p>${esc(e.text)}</p>
-      <div class="acts">${e.type === "intention" && !e.answered ? `<button class="link" data-answer="${e.id}">Mark as answered</button>` : ""}<button class="link" data-del="${e.id}" style="color:var(--muted)">Delete</button></div>
-    </div>`).join("") : `<div class="note center">Nothing here yet. Start by writing your intention.</div>`}`;
+      <div class="acts">${e.type === "intention" && !e.answered ? `<button class="link" data-answer="${e.id}">Marquer comme exaucée</button>` : ""}<button class="link" data-del="${e.id}" style="color:var(--muted)">Supprimer</button></div>
+    </div>`).join("") : `<div class="note center">Rien pour l'instant. Commencez par écrire votre intention.</div>`}`;
 }
 function viewMore(){
-  return `<span class="eyebrow">Help</span><h1>Help &amp; settings</h1>
+  const bellOn = store.get("bell", true);
+  return `<span class="eyebrow">Aide</span><h1>Aide et réglages</h1>
   ${installCard(true)}
   <div class="list">
-    <button class="item" data-action="guide"><span class="num">📲</span><span><strong>How to install the app</strong><span class="sub">Step by step for iPhone and Android</span></span>${CHEV}</button>
-    <button class="item" data-action="support"><span class="num">✉️</span><span><strong>Support</strong><span class="sub">Questions about access or the app</span></span>${CHEV}</button>
-    <button class="item" data-action="about"><span class="num">✝</span><span><strong>About this app</strong><span class="sub">Important information</span></span>${CHEV}</button>
-    <button class="item" data-action="bell"><span class="num">🔔</span><span><strong>Bell between steps: ${store.get("bell", true) ? "On" : "Off"}</strong><span class="sub">Tap to turn ${store.get("bell", true) ? "off" : "on"}</span></span>${CHEV}</button>
+    <button class="item" data-action="guide"><span class="num">📲</span><span><strong>Comment installer l'application</strong><span class="sub">Pas à pas pour iPhone et Android</span></span>${CHEV}</button>
+    <button class="item" data-action="support"><span class="num">✉️</span><span><strong>Assistance</strong><span class="sub">Questions sur l'accès ou l'application</span></span>${CHEV}</button>
+    <button class="item" data-action="about"><span class="num">✝</span><span><strong>À propos de l'application</strong><span class="sub">Informations importantes</span></span>${CHEV}</button>
+    <button class="item" data-action="bell"><span class="num">🔔</span><span><strong>Cloche entre les étapes : ${bellOn ? "activée" : "désactivée"}</strong><span class="sub">Touchez pour ${bellOn ? "désactiver" : "activer"}</span></span>${CHEV}</button>
   </div>`;
 }
 
@@ -863,20 +862,20 @@ function drawPlayer(scroll){
   const intent = s.intention ? currentIntention() : null;
   const html = `<div class="player">
     ${P.steps.length > 1 ? `<div class="steps-bar">${P.steps.map((_, k) => `<i class="${k <= P.i ? "on" : ""}"></i>`).join("")}</div>` : ""}
-    <span class="eyebrow">${P.steps.length > 1 ? `Moment ${P.i + 1} of ${P.steps.length}` : P.title}</span>
+    <span class="eyebrow">${P.steps.length > 1 ? `Moment ${P.i + 1} sur ${P.steps.length}` : P.title}</span>
     <h2>${s.t}</h2>
     <div class="ring"><svg viewBox="0 0 200 200"><circle class="track" cx="100" cy="100" r="90"/><circle class="bar" cx="100" cy="100" r="90" stroke-dasharray="${c}" stroke-dashoffset="${c * (P.left / s.secs)}"/></svg>
-      <div class="t"><b>${fmtTime(P.left)}</b><small>${P.running ? "" : "Paused"}</small></div></div>
+      <div class="t"><b>${fmtTime(P.left)}</b><small>${P.running ? "" : "En pause"}</small></div></div>
     <p class="instr">${s.instr}</p>
     <div class="card" style="text-align:left"><div class="prayer">${s.text}</div>
-      ${s.intention ? (intent ? `<p class="verse" style="margin-top:.8em">"${esc(intent.text)}"</p>` : `<p class="muted" style="margin-top:.8em;font-size:.95rem">Tell God your need in your own words. You can save it in the Journal after the prayer.</p>`) : ""}
+      ${s.intention ? (intent ? `<p class="verse" style="margin-top:.8em">« ${esc(intent.text)} »</p>` : `<p class="muted" style="margin-top:.8em;font-size:.95rem">Dites à Dieu votre besoin avec vos propres mots. Vous pourrez l'enregistrer dans le Journal après la prière.</p>`) : ""}
     </div>
   </div>`;
   rbody.innerHTML = html;
   ractions.innerHTML = `<div class="ctrls">
-    <button class="btn" data-p="prev" ${P.i === 0 ? "disabled" : ""}>‹ Back</button>
-    <button class="btn primary" data-p="toggle">${P.running ? "Pause" : "Continue"}</button>
-    <button class="btn" data-p="next">${P.i === P.steps.length - 1 ? "Finish" : "Next ›"}</button>
+    <button class="btn" data-p="prev" ${P.i === 0 ? "disabled" : ""}>‹ Retour</button>
+    <button class="btn primary" data-p="toggle">${P.running ? "Pause" : "Reprendre"}</button>
+    <button class="btn" data-p="next">${P.i === P.steps.length - 1 ? "Terminer" : "Suivant ›"}</button>
   </div>`;
   if(scroll) reader.scrollTop = 0;
 }
@@ -890,103 +889,103 @@ function playerCtl(a){
   }
 }
 function startSacred(){
-  openReader("", "", "The Sacred Prayer");
-  startPlayer(SACRED_STEPS, "The Sacred Prayer", () => {
+  openReader("", "", "La Prière Sacrée");
+  startPlayer(SACRED_STEPS, "La Prière Sacrée", () => {
     markPrayed();
     const s = streak();
     rbody.innerHTML = `<div class="center" style="padding-top:20px">
       <div class="big-emoji">🕊️</div>
       <span class="eyebrow" style="margin-top:14px">Amen</span>
-      <h1>Your prayer is complete</h1>
-      <p class="muted">${s > 1 ? `${s} days in a row. ` : ""}Go in peace. Throughout the day, notice the small graces and write them in your Journal.</p>
-      ${V("The LORD shall preserve thy going out and thy coming in from this time forth, and even for evermore.","Psalm 121:8")}
+      <h1>Votre prière est terminée</h1>
+      <p class="muted">${s > 1 ? `${s} jours d'affilée. ` : ""}Allez en paix. Au fil de la journée, remarquez les petites grâces et notez-les dans votre Journal.</p>
+      ${V("L'Éternel gardera ton départ et ton arrivée, dès maintenant et à jamais.","Psaume 121:8")}
     </div>`;
-    ractions.innerHTML = `<button class="btn primary" data-action="new-sign">Write in my Journal</button><button class="btn" id="guide-close">Back to the app</button>`;
+    ractions.innerHTML = `<button class="btn primary" data-action="new-sign">Écrire dans mon Journal</button><button class="btn" id="guide-close">Retour à l'application</button>`;
     reader.scrollTop = 0;
   });
 }
 function readFull(){
-  openReader(`<span class="eyebrow">Full text</span><h1>The Sacred Prayer of Saint Anthony</h1>
+  openReader(`<span class="eyebrow">Texte complet</span><h1>La Prière Sacrée de Saint Antoine</h1>
     ${SACRED_STEPS.map((s, i) => `<h3 style="margin-top:22px">${i + 1}. ${s.t}</h3><p class="muted" style="font-size:.92rem">${s.instr}</p><div class="prayer">${s.text}</div>`).join("")}`,
-    `<button class="btn primary" data-action="start">Pray it now, guided</button>`, "Full text");
+    `<button class="btn primary" data-action="start">La prier maintenant, guidée</button>`, "Texte complet");
 }
 
 /* ---------- gifts ---------- */
 function openGift(id){
-  if(id === "manuscript") return openReader(`<span class="eyebrow">Gift 1</span><h1>The Manuscript of Saint Anthony</h1>
-    <p class="muted">A collection of the most loved prayers and devotions to Saint Anthony of Padua, and the Blessed Water Ritual for your home.</p>
-    <div class="list">${MANUSCRIPT.map((m, i) => `<button class="item" data-ms="${m.id}"><span class="num">${i + 1}</span><span><strong>${m.t}</strong><span class="sub">${m.sub}</span></span>${CHEV}</button>`).join("")}</div>`, "", "Gift 1");
+  if(id === "manuscript") return openReader(`<span class="eyebrow">Cadeau 1</span><h1>Le Manuscrit de Saint Antoine</h1>
+    <p class="muted">Un recueil des prières et dévotions les plus aimées à Saint Antoine de Padoue, et le Rituel de l'eau bénite pour votre maison.</p>
+    <div class="list">${MANUSCRIPT.map((m, i) => `<button class="item" data-ms="${m.id}"><span class="num">${i + 1}</span><span><strong>${m.t}</strong><span class="sub">${m.sub}</span></span>${CHEV}</button>`).join("")}</div>`, "", "Cadeau 1");
   if(id === "w12") return openW12();
-  if(id === "benedict") return openReader(BENEDICT_HTML, "", "Gift 3");
+  if(id === "benedict") return openReader(BENEDICT_HTML, "", "Cadeau 3");
   if(id === "signs") return openSigns();
-  if(id === "psalm") return openReader(`<span class="eyebrow">Gift 5</span><h1>The One-Minute Psalm Prayer</h1>
-    <p>A short prayer woven from the Psalms, for the days when worries about bills and provision weigh on your heart. One minute, with full attention.</p>
+  if(id === "psalm") return openReader(`<span class="eyebrow">Cadeau 5</span><h1>La Prière d'une Minute des Psaumes</h1>
+    <p>Une courte prière tissée à partir des Psaumes, pour les jours où les soucis de factures et de subsistance pèsent sur votre cœur. Une minute, avec toute votre attention.</p>
     <div class="card"><div class="prayer">${PSALM_PRAYER}</div></div>
-    <p class="muted" style="font-size:.9rem">Inspired by Psalm 23:1, Psalm 37:5, Psalm 90:17 and Psalm 1:3.</p>
-    <div class="note">Practice: pray it once a day for 30 days, ideally before you check your accounts or start work. Then take one concrete step from the Abundance Bible (Gift 6).</div>`,
-    `<button class="btn primary" data-action="psalm-timer">Pray now with the 1-minute timer</button>`, "Gift 5");
+    <p class="muted" style="font-size:.9rem">Inspirée du Psaume 23:1, du Psaume 37:5, du Psaume 90:17 et du Psaume 1:3.</p>
+    <div class="note">Pratique : priez-la une fois par jour pendant 30 jours, idéalement avant de regarder vos comptes ou de commencer le travail. Puis faites un pas concret de la Bible de l'Abondance (Cadeau 6).</div>`,
+    `<button class="btn primary" data-action="psalm-timer">Prier maintenant avec le minuteur d'1 minute</button>`, "Cadeau 5");
   if(id === "solomon") return openSolomon();
 }
 function openMs(id){
   const m = MANUSCRIPT.find(x => x.id === id);
-  openReader(m.html, `<button class="btn" data-gift="manuscript">‹ Back to the Manuscript</button>`, "The Manuscript");
+  openReader(m.html, `<button class="btn" data-gift="manuscript">‹ Retour au Manuscrit</button>`, "Le Manuscrit");
 }
 function openW12(){
   const done = store.get("w12", []);
-  openReader(`<span class="eyebrow">Gift 2</span><h1>The 12-Word Prayer</h1>
-    <p>A prayer so short it fits in a single breath, and so deep it can change the way you live each day. Pray it in the morning, at noon and at night, for seven days.</p>
-    <div class="card hero" style="text-align:center"><span class="eyebrow">The 12 words</span><p class="verse" style="color:#fbf1e4;font-size:1.5rem;font-style:normal">${W12.prayer}</p></div>
-    <h2 style="margin-top:20px">Your 7-day journey</h2>
-    <p class="muted">${done.length}/7 days completed</p>
-    <div class="list">${W12.days.map((d, i) => `<button class="item ${done.includes(i) ? "done" : ""}" data-w12="${i}"><span class="num">${done.includes(i) ? "✓" : i + 1}</span><span><strong>Day ${i + 1}: ${d.t}</strong><span class="sub">${d.ref}</span></span>${CHEV}</button>`).join("")}</div>`, "", "Gift 2");
+  openReader(`<span class="eyebrow">Cadeau 2</span><h1>La Prière des 12 Mots</h1>
+    <p>Une prière si courte qu'elle tient en un seul souffle, et si profonde qu'elle peut changer votre façon de vivre chaque jour. Priez-la le matin, à midi et le soir, pendant sept jours.</p>
+    <div class="card hero" style="text-align:center"><span class="eyebrow">Les 12 mots</span><p class="verse" style="color:#fbf1e4;font-size:1.5rem;font-style:normal">${W12.prayer}</p></div>
+    <h2 style="margin-top:20px">Votre parcours de 7 jours</h2>
+    <p class="muted">${done.length}/7 jours terminés</p>
+    <div class="list">${W12.days.map((d, i) => `<button class="item ${done.includes(i) ? "done" : ""}" data-w12="${i}"><span class="num">${done.includes(i) ? "✓" : i + 1}</span><span><strong>Jour ${i + 1} : ${d.t}</strong><span class="sub">${d.ref}</span></span>${CHEV}</button>`).join("")}</div>`, "", "Cadeau 2");
 }
 function openW12Day(i){
   const d = W12.days[i], done = store.get("w12", []).includes(i);
-  openReader(`<span class="eyebrow">Day ${i + 1} of 7</span><h1>${d.t}</h1>
+  openReader(`<span class="eyebrow">Jour ${i + 1} sur 7</span><h1>${d.t}</h1>
     ${V(d.v, d.ref)}
     <p>${d.r}</p>
-    <div class="card hero" style="text-align:center"><span class="eyebrow">Pray</span><p class="verse" style="color:#fbf1e4;font-style:normal">${W12.prayer}</p></div>
-    <h3 style="margin-top:18px">Today's practice</h3><p>${d.p}</p>`,
-    `<button class="btn ${done ? "" : "primary"}" data-w12done="${i}">${done ? "✓ Completed · tap to undo" : "Mark Day " + (i + 1) + " as completed"}</button><button class="btn" data-gift="w12">‹ All 7 days</button>`, "Gift 2");
+    <div class="card hero" style="text-align:center"><span class="eyebrow">Priez</span><p class="verse" style="color:#fbf1e4;font-style:normal">${W12.prayer}</p></div>
+    <h3 style="margin-top:18px">La pratique du jour</h3><p>${d.p}</p>`,
+    `<button class="btn ${done ? "" : "primary"}" data-w12done="${i}">${done ? "✓ Terminé · touchez pour annuler" : "Marquer le jour " + (i + 1) + " comme terminé"}</button><button class="btn" data-gift="w12">‹ Les 7 jours</button>`, "Cadeau 2");
 }
 function openSigns(){
-  openReader(`<span class="eyebrow">Gift 4</span><h1>The Secrets of Divine Signs</h1>
-    <p>God speaks in many ways, and often we do not notice. Here are 15 signs that the saints and spiritual guides have taught us to recognise, how to discern them, and a simple way to bless the people you love, even from afar.</p>
-    <h2 style="margin-top:18px">15 signs God may be sending you</h2>
-    ${SIGNS.map(([t, d], i) => `<div class="entry"><div class="meta"><span class="tag" style="margin:0">Sign ${i + 1}</span></div><p><b>${t}.</b> ${d}</p></div>`).join("")}
-    <h2 style="margin-top:22px">How to discern a sign</h2>
+  openReader(`<span class="eyebrow">Cadeau 4</span><h1>Les Secrets des Signes Divins</h1>
+    <p>Dieu parle de bien des manières, et souvent nous ne le remarquons pas. Voici 15 signes que les saints et les guides spirituels nous ont appris à reconnaître, comment les discerner, et une manière simple de bénir ceux que vous aimez, même à distance.</p>
+    <h2 style="margin-top:18px">15 signes que Dieu vous envoie peut-être</h2>
+    ${SIGNS.map(([t, d], i) => `<div class="entry"><div class="meta"><span class="tag" style="margin:0">Signe ${i + 1}</span></div><p><b>${t}.</b> ${d}</p></div>`).join("")}
+    <h2 style="margin-top:22px">Comment discerner un signe</h2>
     <ol class="plain">
-      <li><b>Is it in harmony with Scripture?</b> God never contradicts His Word.</li>
-      <li><b>Does it bring lasting peace?</b> Anxiety and pressure rarely come from God.</li>
-      <li><b>Does it lead to more love?</b> True signs make us kinder, humbler and more generous.</li>
-      <li><b>Is it confirmed with time and good counsel?</b> Wait, pray and talk to someone you trust.</li>
+      <li><b>Est-il en accord avec l'Écriture ?</b> Dieu ne contredit jamais sa Parole.</li>
+      <li><b>Apporte-t-il une paix durable ?</b> L'angoisse et la pression viennent rarement de Dieu.</li>
+      <li><b>Conduit-il à plus d'amour ?</b> Les vrais signes nous rendent plus bons, plus humbles et plus généreux.</li>
+      <li><b>Est-il confirmé avec le temps et par de bons conseils ?</b> Attendez, priez et parlez-en à une personne de confiance.</li>
     </ol>
-    <button class="btn block" data-action="new-sign">Write a sign in my Journal</button>
+    <button class="btn block" data-action="new-sign">Noter un signe dans mon Journal</button>
     <div class="divider"></div>
-    <span class="eyebrow">Protect those you love, even from afar</span>
-    <h2>4 blessing verses for your loved ones</h2>
-    <p>Write one of these verses by hand on a small piece of paper, pray it for the person, and place it in their bag, wallet or lunch box as a sign of your love and prayer. You can also send it to them by message.</p>
-    ${BLESS_CARDS.map(([t, r], i) => `<div class="card"><span class="tag">Verse ${i + 1}</span><p class="verse">${t}</p><span class="ref">${r}</span>
-      <div class="row" style="margin-top:12px"><button class="chip-btn" data-copy="${i}">Copy</button>${navigator.share ? `<button class="chip-btn" data-share="${i}">Send</button>` : ""}</div></div>`).join("")}
-    <div class="note">While you write, pray: "Lord, bless and keep <i>(name)</i>. Holy Guardian Angel, protect them wherever they go. Amen."</div>`, "", "Gift 4");
+    <span class="eyebrow">Protéger ceux que vous aimez, même à distance</span>
+    <h2>4 versets de bénédiction pour vos proches</h2>
+    <p>Écrivez à la main l'un de ces versets sur un petit papier, priez-le pour la personne, et glissez-le dans son sac, son portefeuille ou sa boîte à repas, comme signe de votre amour et de votre prière. Vous pouvez aussi le lui envoyer par message.</p>
+    ${BLESS_CARDS.map(([t, r], i) => `<div class="card"><span class="tag">Verset ${i + 1}</span><p class="verse">${t}</p><span class="ref">${r}</span>
+      <div class="row" style="margin-top:12px"><button class="chip-btn" data-copy="${i}">Copier</button>${navigator.share ? `<button class="chip-btn" data-share="${i}">Envoyer</button>` : ""}</div></div>`).join("")}
+    <div class="note">Pendant que vous écrivez, priez : « Seigneur, bénis et garde <i>(prénom)</i>. Saint Ange gardien, protégez-le partout où il va. Amen. »</div>`, "", "Cadeau 4");
 }
 function openSolomon(){
   const done = store.get("sol", []);
-  openReader(`<span class="eyebrow">Gift 6</span><h1>The Abundance Bible of King Solomon</h1>
-    <p>King Solomon is remembered as the wisest and one of the most prosperous kings of Israel. His Proverbs, and the Psalms of his father David, contain practical wisdom for a life of peace and provision.</p>
-    <p>Biblical abundance is much more than money: it is wisdom, peace at home, honest work, freedom from debt and a generous heart. This practical guide shows you <b>7 habits</b> to apply these principles in your daily life.</p>
-    <p class="muted">${done.length}/7 habits practised</p>
+  openReader(`<span class="eyebrow">Cadeau 6</span><h1>La Bible de l'Abondance du Roi Salomon</h1>
+    <p>Le roi Salomon est resté dans les mémoires comme le plus sage et l'un des plus prospères des rois d'Israël. Ses Proverbes, et les Psaumes de son père David, contiennent une sagesse pratique pour une vie de paix et de subsistance.</p>
+    <p>L'abondance biblique est bien plus que l'argent : c'est la sagesse, la paix au foyer, un travail honnête, la liberté face aux dettes et un cœur généreux. Ce guide pratique vous montre <b>7 habitudes</b> pour appliquer ces principes dans votre vie quotidienne.</p>
+    <p class="muted">${done.length}/7 habitudes pratiquées</p>
     <div class="list">${SOLOMON.map((h, i) => `<button class="item ${done.includes(i) ? "done" : ""}" data-sol="${i}"><span class="num">${done.includes(i) ? "✓" : i + 1}</span><span><strong>${h.t}</strong><span class="sub">${h.ref}</span></span>${CHEV}</button>`).join("")}</div>
-    <div class="note">This guide is spiritual and educational. For decisions about debts, investments or taxes, look for a qualified professional.</div>`, "", "Gift 6");
+    <div class="note">Ce guide est spirituel et éducatif. Pour les décisions concernant des dettes, des placements ou des impôts, adressez-vous à un professionnel qualifié.</div>`, "", "Cadeau 6");
 }
 function openSolomonHabit(i){
   const h = SOLOMON[i], done = store.get("sol", []).includes(i);
-  openReader(`<span class="eyebrow">Habit ${i + 1} of 7</span><h1>${h.t}</h1>
+  openReader(`<span class="eyebrow">Habitude ${i + 1} sur 7</span><h1>${h.t}</h1>
     ${V(h.v, h.ref)}
     <p>${h.r}</p>
-    <h3>Practice this week</h3><p>${h.p}</p>
-    <div class="prayer" style="font-size:1.15rem;margin-top:12px">Lord, give me the wisdom of Solomon and the trusting heart of David. Help me to live this habit with faith. Amen.</div>`,
-    `<button class="btn ${done ? "" : "primary"}" data-soldone="${i}">${done ? "✓ Practised · tap to undo" : "I practised this habit"}</button><button class="btn" data-gift="solomon">‹ All 7 habits</button>`, "Gift 6");
+    <h3>À pratiquer cette semaine</h3><p>${h.p}</p>
+    <div class="prayer" style="font-size:1.15rem;margin-top:12px">Seigneur, donne-moi la sagesse de Salomon et le cœur confiant de David. Aide-moi à vivre cette habitude avec foi. Amen.</div>`,
+    `<button class="btn ${done ? "" : "primary"}" data-soldone="${i}">${done ? "✓ Pratiquée · touchez pour annuler" : "J'ai pratiqué cette habitude"}</button><button class="btn" data-gift="solomon">‹ Les 7 habitudes</button>`, "Cadeau 6");
 }
 function toggleIn(key, i){
   const a = store.get(key, []); const k = a.indexOf(i);
@@ -995,79 +994,79 @@ function toggleIn(key, i){
 }
 function openQuestions(){
   const ans = store.get("qs", {});
-  openReader(`<span class="eyebrow">Reflection</span><h1>3 questions about your prayer life</h1>
-    <p class="muted">Answer honestly. There are no wrong answers: this is just a mirror for your heart.</p>
+  openReader(`<span class="eyebrow">Réflexion</span><h1>3 questions sur votre vie de prière</h1>
+    <p class="muted">Répondez honnêtement. Il n'y a pas de mauvaise réponse : c'est simplement un miroir pour votre cœur.</p>
     ${QUESTIONS.map((q, i) => `<div class="qa"><span>${q}</span>
-      <button class="chip-btn" data-q="${i}:yes" aria-pressed="${ans[i]==="yes"}">Yes</button>
-      <button class="chip-btn" data-q="${i}:no" aria-pressed="${ans[i]==="no"}">No</button></div>`).join("")}
-    <div id="q-result" style="margin-top:18px">${qResult(ans)}</div>`, "", "Reflection");
+      <button class="chip-btn" data-q="${i}:yes" aria-pressed="${ans[i]==="yes"}">Oui</button>
+      <button class="chip-btn" data-q="${i}:no" aria-pressed="${ans[i]==="no"}">Non</button></div>`).join("")}
+    <div id="q-result" style="margin-top:18px">${qResult(ans)}</div>`, "", "Réflexion");
 }
 function qResult(ans){
   if(Object.keys(ans).length < 3) return "";
   const no = Object.values(ans).filter(v => v === "no").length;
   return no === 0
-    ? `<div class="note"><b>Beautiful.</b> Your relationship with God is alive. Keep nourishing it every morning with the 8-minute prayer and remember to give thanks.</div>`
-    : `<div class="note"><b>Your connection with God can grow, and it is not your fault.</b> The noise of daily life distances all of us. Seven mornings of the Sacred Prayer, together with the 12-Word Prayer (Gift 2), are a simple way to rebuild this closeness.</div>
-       <button class="btn primary block" data-action="start">Begin the Sacred Prayer</button>`;
+    ? `<div class="note"><b>C'est beau.</b> Votre relation avec Dieu est vivante. Continuez à la nourrir chaque matin avec la prière de 8 minutes, et n'oubliez pas de rendre grâce.</div>`
+    : `<div class="note"><b>Votre lien avec Dieu peut grandir, et ce n'est pas votre faute.</b> Le bruit de la vie quotidienne nous éloigne tous. Sept matins de Prière Sacrée, avec la Prière des 12 Mots (Cadeau 2), sont un moyen simple de retrouver cette proximité.</div>
+       <button class="btn primary block" data-action="start">Commencer la Prière Sacrée</button>`;
 }
 
 /* ---------- journal ---------- */
 function newEntry(type){
-  const titles = { intention:["Your intention","What grace are you asking God for? Write it simply, as you would tell a friend."],
-                   sign:["A sign or a grace","What did you notice? A word, a peace, an answer, a person…"],
-                   thanks:["Gratitude","What are you thankful for today?"] };
+  const titles = { intention:["Votre intention","Quelle grâce demandez-vous à Dieu ? Écrivez-la simplement, comme vous le diriez à un ami."],
+                   sign:["Un signe ou une grâce","Qu'avez-vous remarqué ? Une parole, une paix, une réponse, une personne…"],
+                   thanks:["Gratitude","Pour quoi êtes-vous reconnaissant aujourd'hui ?"] };
   const [t, d] = titles[type];
   openReader(`<span class="eyebrow">Journal</span><h1>${t}</h1><p class="muted">${d}</p>
     <textarea id="jtext" rows="6" maxlength="1200" aria-label="${t}"></textarea>`,
-    `<button class="btn primary" data-save="${type}">Save</button><button class="btn" id="guide-close">Cancel</button>`, "Journal");
+    `<button class="btn primary" data-save="${type}">Enregistrer</button><button class="btn" id="guide-close">Annuler</button>`, "Journal");
   setTimeout(() => { const el = $("#jtext"); if(el) el.focus(); }, 80);
 }
 function saveEntry(type){
   const text = ($("#jtext").value || "").trim();
-  if(!text){ toast("Write something first"); return; }
+  if(!text){ toast("Écrivez d'abord quelque chose"); return; }
   const j = journal(); j.unshift({ id:Date.now().toString(36), type, text, date:Date.now(), answered:false }); saveJournal(j);
-  toast("Saved in your Journal"); jFilter = "all"; tab = "journal"; store.set("tab", tab); closeReader();
+  toast("Enregistré dans votre Journal"); jFilter = "all"; tab = "journal"; store.set("tab", tab); closeReader();
 }
 
 /* ---------- about ---------- */
 function openAbout(){
-  openReader(`<span class="eyebrow">About</span><h1>About this app</h1>
-    <p>This app brings together the Sacred 8-Minute Prayer of Saint Anthony of Padua and six devotional gifts: traditional prayers, biblical reflections and practical guides for daily life.</p>
-    <p>The prayers marked as traditional belong to the devotional heritage of the Church. Bible verses are quoted from the King James Version (public domain).</p>
-    <div class="note"><b>Important.</b> This is a devotional and educational resource of faith. It does not promise specific results, and it does not replace medical, psychological, legal or financial advice. If you are ill, keep following your doctor's guidance. For decisions about money and debts, look for a qualified professional.</div>
-    <p class="muted" style="font-size:.88rem">Your Journal, progress and settings are stored only on this device.</p>`, `<button class="btn primary" id="guide-close">Back to the app</button>`, "About");
+  openReader(`<span class="eyebrow">À propos</span><h1>À propos de l'application</h1>
+    <p>Cette application réunit la Prière Sacrée de 8 minutes de Saint Antoine de Padoue et six cadeaux de dévotion : des prières traditionnelles, des réflexions bibliques et des guides pratiques pour la vie quotidienne.</p>
+    <p>Les prières indiquées comme traditionnelles appartiennent au patrimoine de dévotion de l'Église. Les versets bibliques sont cités d'après la Bible Louis Segond 1910 (domaine public).</p>
+    <div class="note"><b>Important.</b> Il s'agit d'une ressource de foi, de dévotion et d'éducation. Elle ne promet aucun résultat précis et ne remplace pas un avis médical, psychologique, juridique ou financier. Si vous êtes malade, continuez à suivre les conseils de votre médecin. Pour les décisions concernant l'argent et les dettes, adressez-vous à un professionnel qualifié.</div>
+    <p class="muted" style="font-size:.88rem">Votre Journal, votre progression et vos réglages sont enregistrés uniquement sur cet appareil.</p>`, `<button class="btn primary" id="guide-close">Retour à l'application</button>`, "À propos");
 }
 
-/* ---------- INSTALL ---------- */
+/* ---------- INSTALLATION ---------- */
 const UA = navigator.userAgent;
 const IS_IOS = /iPhone|iPad|iPod/.test(UA) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
 const IS_ANDROID = /Android/.test(UA);
 const IOS_VER = (() => { const m = UA.match(/OS (\d+)_(\d+)/); return m ? +m[1] + +m[2]/100 : 0; })();
 const IN_APP = /FBAN|FBAV|FB_IAB|FBIOS|Instagram|Line\/|TikTok|BytedanceWebview|musical_ly|Snapchat|Twitter|Pinterest|LinkedInApp|GSA\//.test(UA) || (IS_ANDROID && /; wv\)/.test(UA));
-const IN_APP_NAME = /Instagram/.test(UA) ? "Instagram" : /FBAN|FBAV|FB_IAB|FBIOS/.test(UA) ? "Facebook" : /TikTok|musical_ly|Bytedance/.test(UA) ? "TikTok" : "this app";
+const IN_APP_NAME = /Instagram/.test(UA) ? "Instagram" : /FBAN|FBAV|FB_IAB|FBIOS/.test(UA) ? "Facebook" : /TikTok|musical_ly|Bytedance/.test(UA) ? "TikTok" : "cette application";
 const IOS_BROWSER = /CriOS/.test(UA) ? "Chrome" : /FxiOS/.test(UA) ? "Firefox" : /EdgiOS/.test(UA) ? "Edge" : "Safari";
 const ANDROID_BROWSER = /SamsungBrowser/.test(UA) ? "samsung" : /Firefox/.test(UA) ? "firefox" : /EdgA/.test(UA) ? "edge" : /OPR|Opera/.test(UA) ? "opera" : "chrome";
 const isStandalone = () => matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
 let installPrompt = null;
-const APP_NAME = "Saint Anthony";
+const APP_NAME = "Saint Antoine";
 
 const ICO = {
-  share:`<span class="ico" aria-label="Share icon"><svg viewBox="0 0 24 24"><path d="M12 15V3M8 7l4-4 4 4"/><path d="M6 11H5v10h14V11h-1"/></svg></span>`,
-  plus:`<span class="ico" aria-label="Add icon"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 8v8M8 12h8"/></svg></span>`,
-  vdots:`<span class="ico" aria-label="Menu with three dots"><svg viewBox="0 0 24 24"><circle class="dot" cx="12" cy="5" r="1.8"/><circle class="dot" cx="12" cy="12" r="1.8"/><circle class="dot" cx="12" cy="19" r="1.8"/></svg></span>`,
-  hdots:`<span class="ico" aria-label="Three dots button"><svg viewBox="0 0 24 24"><circle class="dot" cx="5" cy="12" r="1.8"/><circle class="dot" cx="12" cy="12" r="1.8"/><circle class="dot" cx="19" cy="12" r="1.8"/></svg></span>`,
-  menu:`<span class="ico" aria-label="Menu with three lines"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg></span>`,
-  install:`<span class="ico" aria-label="Install icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M12 7v6M9 10.5l3 3 3-3M8 21h8"/></svg></span>`
+  share:`<span class="ico" aria-label="Icône Partager"><svg viewBox="0 0 24 24"><path d="M12 15V3M8 7l4-4 4 4"/><path d="M6 11H5v10h14V11h-1"/></svg></span>`,
+  plus:`<span class="ico" aria-label="Icône Ajouter"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 8v8M8 12h8"/></svg></span>`,
+  vdots:`<span class="ico" aria-label="Menu à trois points"><svg viewBox="0 0 24 24"><circle class="dot" cx="12" cy="5" r="1.8"/><circle class="dot" cx="12" cy="12" r="1.8"/><circle class="dot" cx="12" cy="19" r="1.8"/></svg></span>`,
+  hdots:`<span class="ico" aria-label="Bouton à trois points"><svg viewBox="0 0 24 24"><circle class="dot" cx="5" cy="12" r="1.8"/><circle class="dot" cx="12" cy="12" r="1.8"/><circle class="dot" cx="19" cy="12" r="1.8"/></svg></span>`,
+  menu:`<span class="ico" aria-label="Menu à trois traits"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg></span>`,
+  install:`<span class="ico" aria-label="Icône Installer"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M12 7v6M9 10.5l3 3 3-3M8 21h8"/></svg></span>`
 };
 
 function installCard(force){
   if(isStandalone()){
-    return force ? `<div class="note center">✓ The app is installed on this device.</div>` : "";
+    return force ? `<div class="note center">✓ L'application est installée sur cet appareil.</div>` : "";
   }
   return `<div class="install">
     <img src="icons/icon-192.png" alt="">
-    <div><strong>Install the app on your phone</strong><span>It opens full screen like any other app, and your prayers work even without internet.</span></div>
-    <button class="btn primary" data-install>${installPrompt ? "Install the app" : "How to install"}</button>
+    <div><strong>Installez l'application sur votre téléphone</strong><span>Elle s'ouvre en plein écran comme n'importe quelle application, et vos prières fonctionnent même sans internet.</span></div>
+    <button class="btn primary" data-install>${installPrompt ? "Installer l'application" : "Comment l'installer"}</button>
   </div>`;
 }
 function syncInstallUI(){ const h = $("#hdr-install"); if(h) h.hidden = isStandalone(); }
@@ -1077,7 +1076,7 @@ async function startInstall(){
     installPrompt.prompt();
     const choice = await installPrompt.userChoice.catch(() => null);
     installPrompt = null;
-    if(choice && choice.outcome === "accepted"){ toast("Installing the app…"); if(!reader.hidden) closeReader(); else render(); return; }
+    if(choice && choice.outcome === "accepted"){ toast("Installation de l'application…"); if(!reader.hidden) closeReader(); else render(); return; }
     render();
   }
   openGuide(IS_IOS ? "ios" : IS_ANDROID ? "android" : "computer");
@@ -1087,58 +1086,58 @@ function stepsHTML(list){ return `<ol class="steps">${list.map(s => `<li><div>${
 
 function inAppSteps(plat){
   return plat === "ios" ? [
-    `Tap the ${ICO.hdots} button at the <b>top right</b> of the screen.<small>On Facebook it may be at the bottom right.</small>`,
-    `Tap <b>"Open in external browser"</b>.<small>It may also appear as "Open in Safari" or "Open in browser".</small>`,
-    `The app opens in Safari. Tap <b>Install</b> again and follow the steps.`
+    `Touchez le bouton ${ICO.hdots} en <b>haut à droite</b> de l'écran.<small>Sur Facebook, il peut être en bas à droite.</small>`,
+    `Touchez <b>« Ouvrir dans le navigateur »</b>.<small>Cela peut aussi s'appeler « Ouvrir dans Safari » ou « Ouvrir dans un navigateur externe ».</small>`,
+    `La page s'ouvre dans Safari. Touchez à nouveau <b>Installer</b> et suivez les étapes.`
   ] : [
-    `Tap the ${ICO.vdots} button at the <b>top right</b> of the screen.`,
-    `Tap <b>"Open in Chrome"</b> or <b>"Open in external browser"</b>.`,
-    `The app opens in your browser. Tap <b>Install</b> again and follow the steps.`
+    `Touchez le bouton ${ICO.vdots} en <b>haut à droite</b> de l'écran.`,
+    `Touchez <b>« Ouvrir dans Chrome »</b> ou <b>« Ouvrir dans le navigateur »</b>.`,
+    `La page s'ouvre dans votre navigateur. Touchez à nouveau <b>Installer</b> et suivez les étapes.`
   ];
 }
 function iosSteps(){
   if(IOS_BROWSER === "Safari") return [
-    `Make sure this page is open in <b>Safari</b>, the iPhone's compass icon browser.`,
-    `Tap the <b>Share</b> button ${ICO.share} at the bottom of the screen.<small>On iOS 26, first tap ${ICO.hdots} at the bottom right, then tap Share. On iPad, Share is at the top right, next to the address bar.</small>`,
-    `Scroll down the list and tap <b>"Add to Home Screen"</b> ${ICO.plus}.<small>Don't see it? Scroll to the bottom and tap "Edit Actions" or "View More", then choose "Add to Home Screen".</small>`,
-    `Leave <b>"Open as Web App"</b> turned on and tap <b>Add</b> at the top right.<small>On older iPhones this option doesn't appear. Just tap Add.</small>`,
-    `Close Safari and open <b>${APP_NAME}</b> from the new icon on your Home Screen. From now on, always open it from there.`
+    `Vérifiez que cette page est ouverte dans <b>Safari</b>, le navigateur à l'icône de boussole de l'iPhone.`,
+    `Touchez le bouton <b>Partager</b> ${ICO.share} en bas de l'écran.<small>Sur iOS 26, touchez d'abord ${ICO.hdots} en bas à droite, puis Partager. Sur iPad, Partager est en haut à droite, à côté de la barre d'adresse.</small>`,
+    `Faites défiler la liste et touchez <b>« Sur l'écran d'accueil »</b> ${ICO.plus}.<small>Vous ne le voyez pas ? Allez tout en bas et touchez « Modifier les actions » ou « Plus », puis choisissez « Sur l'écran d'accueil ».</small>`,
+    `Laissez <b>« Ouvrir en tant qu'app web »</b> activé et touchez <b>Ajouter</b> en haut à droite.<small>Sur les iPhone plus anciens, cette option n'apparaît pas. Touchez simplement Ajouter.</small>`,
+    `Fermez Safari et ouvrez <b>${APP_NAME}</b> depuis la nouvelle icône de votre écran d'accueil. Désormais, ouvrez-la toujours depuis là.`
   ];
-  const where = IOS_BROWSER === "Chrome" ? "in the address bar at the top right" : IOS_BROWSER === "Edge" ? "at the bottom of the screen" : "inside the menu " + ICO.menu;
+  const where = IOS_BROWSER === "Chrome" ? "dans la barre d'adresse, en haut à droite" : IOS_BROWSER === "Edge" ? "en bas de l'écran" : "dans le menu " + ICO.menu;
   return [
-    `Tap the <b>Share</b> button ${ICO.share} ${where}.`,
-    `Tap <b>"Add to Home Screen"</b> ${ICO.plus}.<small>Don't see it? Tap "View More", or open this page in Safari, which always shows this option.</small>`,
-    `Tap <b>Add</b> at the top right.`,
-    `Open <b>${APP_NAME}</b> from the new icon on your Home Screen.`
+    `Touchez le bouton <b>Partager</b> ${ICO.share} ${where}.`,
+    `Touchez <b>« Sur l'écran d'accueil »</b> ${ICO.plus}.<small>Vous ne le voyez pas ? Touchez « Plus », ou ouvrez cette page dans Safari, qui affiche toujours cette option.</small>`,
+    `Touchez <b>Ajouter</b> en haut à droite.`,
+    `Ouvrez <b>${APP_NAME}</b> depuis la nouvelle icône de votre écran d'accueil.`
   ];
 }
 function androidSteps(){
   const b = IS_ANDROID ? ANDROID_BROWSER : "chrome";
   if(b === "samsung") return [
-    `Tap the menu ${ICO.menu} at the <b>bottom right</b> of the screen.<small>If you see the install icon ${ICO.install} in the address bar, you can tap it instead.</small>`,
-    `Tap <b>"Add page to"</b>, then <b>"Home screen"</b>.`,
-    `Tap <b>Add</b> to confirm.`,
-    `Open <b>${APP_NAME}</b> from your home screen.`
+    `Touchez le menu ${ICO.menu} en <b>bas à droite</b> de l'écran.<small>Si vous voyez l'icône d'installation ${ICO.install} dans la barre d'adresse, vous pouvez la toucher directement.</small>`,
+    `Touchez <b>« Ajouter la page à »</b>, puis <b>« Écran d'accueil »</b>.`,
+    `Touchez <b>Ajouter</b> pour confirmer.`,
+    `Ouvrez <b>${APP_NAME}</b> depuis votre écran d'accueil.`
   ];
   if(b === "firefox") return [
-    `Tap the menu ${ICO.vdots} (top right or bottom right).`,
-    `Tap <b>"Add app to Home screen"</b> or <b>"Install"</b>.`,
-    `Tap <b>Add</b> to confirm.`,
-    `Open <b>${APP_NAME}</b> from your home screen.`
+    `Touchez le menu ${ICO.vdots} (en haut à droite ou en bas à droite).`,
+    `Touchez <b>« Ajouter à l'écran d'accueil »</b> ou <b>« Installer »</b>.`,
+    `Touchez <b>Ajouter</b> pour confirmer.`,
+    `Ouvrez <b>${APP_NAME}</b> depuis votre écran d'accueil.`
   ];
   return [
-    `Open this page in <b>Google Chrome</b>.<small>If you opened the link from email, Instagram or Facebook, first choose "Open in Chrome".</small>`,
-    `Tap the menu ${ICO.vdots} at the <b>top right</b> of ${b === "chrome" ? "Chrome" : "your browser"}.`,
-    `Tap <b>"Add to Home screen"</b> or <b>"Install app"</b>.<small>The name changes depending on your phone. In Edge, look for "Add to phone".</small>`,
-    `Tap <b>Install</b> to confirm.<small>If Android asks again, tap "Add to home screen" or "Add automatically".</small>`,
-    `Open <b>${APP_NAME}</b> from your home screen or app list.`
+    `Ouvrez cette page dans <b>Google Chrome</b>.<small>Si vous avez ouvert le lien depuis un e-mail, Instagram ou Facebook, choisissez d'abord « Ouvrir dans Chrome ».</small>`,
+    `Touchez le menu ${ICO.vdots} en <b>haut à droite</b> de ${b === "chrome" ? "Chrome" : "votre navigateur"}.`,
+    `Touchez <b>« Ajouter à l'écran d'accueil »</b> ou <b>« Installer l'application »</b>.<small>Le nom varie selon le téléphone. Dans Edge, cherchez « Ajouter au téléphone ».</small>`,
+    `Touchez <b>Installer</b> pour confirmer.<small>Si Android vous le redemande, touchez « Ajouter à l'écran d'accueil » ou « Ajouter automatiquement ».</small>`,
+    `Ouvrez <b>${APP_NAME}</b> depuis votre écran d'accueil ou la liste de vos applications.`
   ];
 }
 function computerSteps(){
   return [
-    `<b>Best on your phone:</b> open this link on your phone and tap Install there.`,
-    `<b>Chrome or Edge on a computer:</b> click the install icon ${ICO.install} at the right side of the address bar, then <b>Install</b>.<small>Or open the menu ${ICO.vdots}, then "Cast, save and share" › "Install page as app".</small>`,
-    `<b>Safari on a Mac:</b> open the <b>File</b> menu and choose <b>"Add to Dock"</b>.`
+    `<b>Le mieux, c'est sur votre téléphone :</b> ouvrez ce lien sur votre téléphone et touchez Installer.`,
+    `<b>Chrome ou Edge sur ordinateur :</b> cliquez sur l'icône d'installation ${ICO.install} à droite de la barre d'adresse, puis sur <b>Installer</b>.<small>Ou ouvrez le menu ${ICO.vdots}, puis « Caster, enregistrer et partager » › « Installer la page en tant qu'application ».</small>`,
+    `<b>Safari sur Mac :</b> ouvrez le menu <b>Fichier</b> et choisissez <b>« Ajouter au Dock »</b>.`
   ];
 }
 function openGuide(plat){
@@ -1147,73 +1146,73 @@ function openGuide(plat){
   const link = esc(location.href.split(/[?#]/)[0]);
   let body;
   if(inApp){
-    body = `<div class="alert">You are inside <b>${IN_APP_NAME}</b>. Apps can only be installed from ${plat === "ios" ? "Safari" : "Chrome"}. First open this page in your browser:</div>
+    body = `<div class="alert">Vous êtes dans <b>${IN_APP_NAME}</b>. Les applications ne peuvent être installées que depuis ${plat === "ios" ? "Safari" : "Chrome"}. Ouvrez d'abord cette page dans votre navigateur :</div>
       ${stepsHTML(inAppSteps(plat))}
-      <p class="intro">Or copy the link and paste it into ${plat === "ios" ? "Safari" : "Chrome"}:</p>
-      <div class="copybox"><code>${link}</code><button class="chip-btn" id="copy-link">Copy</button></div>`;
+      <p class="intro">Ou copiez le lien et collez-le dans ${plat === "ios" ? "Safari" : "Chrome"} :</p>
+      <div class="copybox"><code>${link}</code><button class="chip-btn" id="copy-link">Copier</button></div>`;
   } else if(plat === "ios"){
     const tooOld = IS_IOS && IOS_BROWSER !== "Safari" && IOS_VER && IOS_VER < 16.4;
-    body = (tooOld ? `<div class="alert">On this iPhone, apps can only be installed from <b>Safari</b>. Copy the link below and open it in Safari.</div>
-      <div class="copybox"><code>${link}</code><button class="chip-btn" id="copy-link">Copy</button></div>` : "")
+    body = (tooOld ? `<div class="alert">Sur cet iPhone, les applications ne peuvent être installées que depuis <b>Safari</b>. Copiez le lien ci-dessous et ouvrez-le dans Safari.</div>
+      <div class="copybox"><code>${link}</code><button class="chip-btn" id="copy-link">Copier</button></div>` : "")
       + stepsHTML(iosSteps());
   } else if(plat === "android"){
     body = stepsHTML(androidSteps());
   } else {
-    body = stepsHTML(computerSteps()) + `<div class="copybox"><code>${link}</code><button class="chip-btn" id="copy-link">Copy</button></div>`;
+    body = stepsHTML(computerSteps()) + `<div class="copybox"><code>${link}</code><button class="chip-btn" id="copy-link">Copier</button></div>`;
   }
-  const html = `<span class="eyebrow">Install the app</span>
-    <h1>Put the app on your home screen</h1>
-    <div class="seg" role="group" aria-label="Choose your device" style="grid-template-columns:repeat(3,1fr)">
+  const html = `<span class="eyebrow">Installer l'application</span>
+    <h1>Mettez l'application sur votre écran d'accueil</h1>
+    <div class="seg" role="group" aria-label="Choisissez votre appareil" style="grid-template-columns:repeat(3,1fr)">
       <button data-plat="ios" aria-pressed="${plat==="ios"}">iPhone</button>
       <button data-plat="android" aria-pressed="${plat==="android"}">Android</button>
-      <button data-plat="computer" aria-pressed="${plat==="computer"}">Computer</button>
+      <button data-plat="computer" aria-pressed="${plat==="computer"}">Ordinateur</button>
     </div>
     ${body}
-    <p class="intro">It's free to install, takes almost no space and does not need the App Store or Play Store. Your progress stays saved on this device.</p>`;
+    <p class="intro">L'installation est gratuite, prend très peu de place et ne passe ni par l'App Store ni par le Play Store. Votre progression reste enregistrée sur cet appareil.</p>`;
   const actions = installPrompt && plat !== "ios"
-    ? `<button class="btn primary" data-install>Install now</button>`
-    : `<button class="btn primary" id="guide-close">Got it</button>`;
-  openReader(html, actions, "Install");
+    ? `<button class="btn primary" data-install>Installer maintenant</button>`
+    : `<button class="btn primary" id="guide-close">J'ai compris</button>`;
+  openReader(html, actions, "Installation");
 }
 async function copyText(text, btn, sel){
-  try{ await navigator.clipboard.writeText(text); btn.textContent = "Copied"; }
+  try{ await navigator.clipboard.writeText(text); btn.textContent = "Copié"; }
   catch(e){
-    if(sel){ const r = document.createRange(); r.selectNodeContents(sel); const s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = "Selected"; }
+    if(sel){ const r = document.createRange(); r.selectNodeContents(sel); const s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = "Sélectionné"; }
   }
 }
 
-/* ---------- SUPPORT ---------- */
+/* ---------- ASSISTANCE ---------- */
 const SUPPORT_EMAIL = "bruno.cuber2@gmail.com";
 function openSupport(){
-  const mailto = `mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent("Saint Anthony app support")}`;
+  const mailto = `mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent("Assistance application Saint Antoine")}`;
   const site = location.origin.replace(/^https?:\/\//, "");
-  openReader(`<span class="eyebrow">Support</span>
-    <h1>How can we help?</h1>
-    <p class="intro">Write to us by email and our team will reply as soon as possible.</p>
+  openReader(`<span class="eyebrow">Assistance</span>
+    <h1>Comment pouvons-nous vous aider ?</h1>
+    <p class="intro">Écrivez-nous par e-mail et notre équipe vous répondra dès que possible.</p>
     <div class="mailcard">
-      <span class="eyebrow">Support email</span>
+      <span class="eyebrow">E-mail d'assistance</span>
       <span class="addr">${SUPPORT_EMAIL}</span>
       <div class="row2">
-        <a class="btn primary" href="${mailto}">Send email</a>
-        <button class="btn" id="copy-email">Copy email</button>
+        <a class="btn primary" href="${mailto}">Envoyer un e-mail</a>
+        <button class="btn" id="copy-email">Copier l'e-mail</button>
       </div>
     </div>
-    <div class="note">To help us answer faster, include: the email you used to buy, your phone (iPhone or Android) and what happened.</div>
-    <h2 style="margin-top:6px">Common questions</h2>
+    <div class="note">Pour que nous puissions répondre plus vite, indiquez : l'e-mail utilisé pour l'achat, votre téléphone (iPhone ou Android) et ce qui s'est passé.</div>
+    <h2 style="margin-top:6px">Questions fréquentes</h2>
     <div class="faq">
-      <details><summary>How do I install the app?</summary>
-        <p>Follow the step-by-step guide for your phone. <button class="link" data-action="guide">Open the install guide</button></p></details>
-      <details><summary>I installed it but can't find the icon</summary>
-        <p>On iPhone, swipe left to the App Library or pull down on the home screen and search "${APP_NAME}". On Android, open your app list and search "${APP_NAME}".</p></details>
-      <details><summary>My progress or Journal disappeared</summary>
-        <p>Your progress and Journal are stored on this phone, in the browser where you opened the app. If you open it in another browser or clear your browser data, it starts again.</p></details>
-      <details><summary>Does the app work without internet?</summary>
-        <p>Yes. After you open it once with internet, the prayers and all the gifts keep working offline.</p></details>
-      <details><summary>I don't hear the bell between the steps</summary>
-        <p>Check that your phone is not on silent mode and that the volume is up. On iPhone, the side switch must not show orange. You can also turn the bell on or off in Help.</p></details>
-      <details><summary>How do I access the app again?</summary>
-        <p>Install it on your home screen, or save this address: <b>${esc(site)}</b></p></details>
-    </div>`, `<button class="btn primary" id="guide-close">Back to the app</button>`, "Support");
+      <details><summary>Comment installer l'application ?</summary>
+        <p>Suivez le guide pas à pas pour votre téléphone. <button class="link" data-action="guide">Ouvrir le guide d'installation</button></p></details>
+      <details><summary>Je l'ai installée mais je ne trouve pas l'icône</summary>
+        <p>Sur iPhone, balayez vers la gauche jusqu'à la Bibliothèque d'apps ou tirez vers le bas sur l'écran d'accueil et cherchez « ${APP_NAME} ». Sur Android, ouvrez la liste de vos applications et cherchez « ${APP_NAME} ».</p></details>
+      <details><summary>Ma progression ou mon Journal a disparu</summary>
+        <p>Votre progression et votre Journal sont enregistrés sur ce téléphone, dans le navigateur où vous avez ouvert l'application. Si vous l'ouvrez dans un autre navigateur ou si vous effacez les données du navigateur, tout recommence.</p></details>
+      <details><summary>L'application fonctionne-t-elle sans internet ?</summary>
+        <p>Oui. Après l'avoir ouverte une fois avec internet, les prières et tous les cadeaux continuent de fonctionner hors connexion.</p></details>
+      <details><summary>Je n'entends pas la cloche entre les étapes</summary>
+        <p>Vérifiez que votre téléphone n'est pas en mode silencieux et que le volume est monté. Sur iPhone, le bouton latéral ne doit pas être sur orange. Vous pouvez aussi activer ou désactiver la cloche dans Aide.</p></details>
+      <details><summary>Comment retrouver l'application ?</summary>
+        <p>Installez-la sur votre écran d'accueil, ou gardez cette adresse : <b>${esc(site)}</b></p></details>
+    </div>`, `<button class="btn primary" id="guide-close">Retour à l'application</button>`, "Assistance");
 }
 
 function toast(msg){
@@ -1239,19 +1238,19 @@ document.addEventListener("click", e => {
   if(d.gift){ openGift(d.gift); return; }
   if(d.ms){ openMs(d.ms); return; }
   if(d.w12){ openW12Day(+d.w12); return; }
-  if(d.w12done){ const on = toggleIn("w12", +d.w12done); toast(on ? "Day completed. God bless you!" : "Marked as not completed"); openW12Day(+d.w12done); return; }
+  if(d.w12done){ const on = toggleIn("w12", +d.w12done); toast(on ? "Jour terminé. Que Dieu vous bénisse !" : "Marqué comme non terminé"); openW12Day(+d.w12done); return; }
   if(d.sol){ openSolomonHabit(+d.sol); return; }
-  if(d.soldone){ const on = toggleIn("sol", +d.soldone); toast(on ? "Well done!" : "Marked as not practised"); openSolomonHabit(+d.soldone); return; }
-  if(d.teach){ const x = TEACH[d.teach]; openReader(x.html, `<button class="btn primary" data-action="start">Begin the Sacred Prayer</button>`, x.title); return; }
+  if(d.soldone){ const on = toggleIn("sol", +d.soldone); toast(on ? "Bravo !" : "Marquée comme non pratiquée"); openSolomonHabit(+d.soldone); return; }
+  if(d.teach){ const x = TEACH[d.teach]; openReader(x.html, `<button class="btn primary" data-action="start">Commencer la Prière Sacrée</button>`, x.title); return; }
   if(d.plat){ openGuide(d.plat); return; }
   if(d.jf){ jFilter = d.jf; render(); return; }
   if(d.save){ saveEntry(d.save); return; }
-  if(d.answer){ const j = journal(); const x = j.find(y => y.id === d.answer); if(x){ x.answered = true; saveJournal(j); toast("Thank God for this answer! 🙏"); render(); } return; }
-  if(d.del){ if(confirm("Delete this note?")){ saveJournal(journal().filter(y => y.id !== d.del)); render(); } return; }
+  if(d.answer){ const j = journal(); const x = j.find(y => y.id === d.answer); if(x){ x.answered = true; saveJournal(j); toast("Rendez grâce à Dieu pour cette réponse ! 🙏"); render(); } return; }
+  if(d.del){ if(confirm("Supprimer cette note ?")){ saveJournal(journal().filter(y => y.id !== d.del)); render(); } return; }
   if(d.q){ const [i, v] = d.q.split(":"); const a = store.get("qs", {}); a[i] = v; store.set("qs", a);
     t.parentElement.querySelectorAll("[data-q]").forEach(b => b.setAttribute("aria-pressed", b === t)); $("#q-result").innerHTML = qResult(a); return; }
   if(d.copy){ const [txt, ref] = BLESS_CARDS[+d.copy]; copyText(`${txt} (${ref})`, t, t.closest(".card").querySelector(".verse")); return; }
-  if(d.share){ const [txt, ref] = BLESS_CARDS[+d.share]; navigator.share({ text:`${txt} (${ref})\nI am praying for you. 🙏` }).catch(() => {}); return; }
+  if(d.share){ const [txt, ref] = BLESS_CARDS[+d.share]; navigator.share({ text:`${txt} (${ref})\nJe prie pour toi. 🙏` }).catch(() => {}); return; }
   if(t.id === "guide-close"){ closeReader(); return; }
   if(t.id === "copy-link"){ copyText(location.href.split(/[?#]/)[0], t, t.previousElementSibling); return; }
   if(t.id === "copy-email"){ copyText(SUPPORT_EMAIL, t, rbody.querySelector(".addr")); return; }
@@ -1262,9 +1261,9 @@ document.addEventListener("click", e => {
     case "new-intention": newEntry("intention"); break;
     case "new-sign": newEntry("sign"); break;
     case "new-thanks": newEntry("thanks"); break;
-    case "psalm-timer": startPlayer([{ t:"One-Minute Psalm Prayer", secs:60, instr:"Pray slowly, with full attention.", text:PSALM_PRAYER }], "Gift 5", () => {
-        rbody.innerHTML = `<div class="center" style="padding-top:30px"><div class="big-emoji">🌿</div><h1 style="margin-top:12px">Amen</h1><p class="muted">Now take one small, concrete step with your finances today, with a calm heart.</p></div>`;
-        ractions.innerHTML = `<button class="btn primary" data-gift="solomon">Open the Abundance Bible</button><button class="btn" id="guide-close">Back to the app</button>`; }); break;
+    case "psalm-timer": startPlayer([{ t:"La Prière d'une Minute des Psaumes", secs:60, instr:"Priez lentement, avec toute votre attention.", text:PSALM_PRAYER }], "Cadeau 5", () => {
+        rbody.innerHTML = `<div class="center" style="padding-top:30px"><div class="big-emoji">🌿</div><h1 style="margin-top:12px">Amen</h1><p class="muted">Faites maintenant un petit pas concret pour vos finances aujourd'hui, le cœur paisible.</p></div>`;
+        ractions.innerHTML = `<button class="btn primary" data-gift="solomon">Ouvrir la Bible de l'Abondance</button><button class="btn" id="guide-close">Retour à l'application</button>`; }); break;
     case "guide": openGuide(IS_IOS ? "ios" : IS_ANDROID ? "android" : "computer"); break;
     case "support": openSupport(); break;
     case "about": openAbout(); break;
@@ -1274,7 +1273,7 @@ document.addEventListener("click", e => {
 document.addEventListener("visibilitychange", () => { if(document.visibilityState === "visible" && P && P.running) keepAwake(true); });
 
 window.addEventListener("beforeinstallprompt", e => { e.preventDefault(); installPrompt = e; if(reader.hidden) render(); });
-window.addEventListener("appinstalled", () => { installPrompt = null; toast("The app was installed"); syncInstallUI(); if(reader.hidden) render(); });
+window.addEventListener("appinstalled", () => { installPrompt = null; toast("L'application a été installée"); syncInstallUI(); if(reader.hidden) render(); });
 matchMedia("(display-mode: standalone)").addEventListener?.("change", () => { syncInstallUI(); render(); });
 
 if("serviceWorker" in navigator){

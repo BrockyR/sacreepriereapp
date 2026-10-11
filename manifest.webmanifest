@@ -1,7 +1,7 @@
 {
-  "name": "Sacred Prayer of Saint Anthony",
-  "short_name": "St. Anthony",
-  "description": "The 8-minute morning prayer of Saint Anthony of Padua, with all your gifts: prayers, devotions and guides.",
+  "name": "La Prière Sacrée de Saint Antoine",
+  "short_name": "Saint Antoine",
+  "description": "La prière du matin de 8 minutes de Saint Antoine de Padoue, avec tous vos cadeaux : prières, dévotions et guides.",
   "id": "./",
   "start_url": "./?source=pwa",
   "scope": "./",
@@ -9,7 +9,7 @@
   "orientation": "portrait",
   "background_color": "#2b0f16",
   "theme_color": "#4a1823",
-  "lang": "en",
+  "lang": "fr",
   "categories": ["lifestyle", "books"],
   "icons": [
     { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },

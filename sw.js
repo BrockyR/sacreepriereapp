@@ -1,5 +1,5 @@
-// Saint Anthony service worker: keeps the app working offline after the first visit.
-const VERSION = "sa-v1";
+// Saint Antoine service worker: keeps the app working offline after the first visit.
+const VERSION = "sa-v2";
 const SHELL = [
   "./",
   "./index.html",
